@@ -1,0 +1,4219 @@
+
+@charset "utf-8"; /* reset */
+#__next {
+    width: 100%
+}
+
+/*sprite*/
+.sprite__homemain, .sprite__homemain--before:before, .sprite__homemain--after:after {
+    overflow: hidden;
+    display: inline-block;
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sprite__homemain.svg) no-repeat;
+    line-height: 999px;
+    vertical-align: top
+}
+
+/* main common */
+.section__main {
+    overflow: hidden;
+    min-width: 1200px
+}
+
+.section__main-inner {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto
+}
+
+.section__main-inner:after {
+    display: block;
+    content: '';
+    clear: both
+}
+
+.section__main .link__title {
+    font-family: Gmarket Sans,'Gmarket Sans',sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    color: #222;
+    letter-spacing: -1px
+}
+
+.section__main .box__expressshop .link__title {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.section__main .text__title .text {
+    font-family: Gmarket Sans,'Gmarket Sans',sans-serif;
+    font-weight: normal
+}
+
+.section__main .link__more {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    z-index: 10;
+    padding-right: 25px;
+    font-size: 15px;
+    color: #777;
+    line-height: 18px;
+    letter-spacing: -1px
+}
+
+.section__main .link__more:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    background-position: 0 -44px
+}
+
+.section__main .box__ad-tooltip {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    z-index: 10
+}
+
+.section__main .box__ad-tooltip .button__ad-tooltip .sprite__homemain {
+    width: 20px;
+    height: 14px;
+    background-position: -154px -144px
+}
+
+.section__main .box__ad-tooltip .text__information {
+    display: none;
+    position: absolute;
+    top: 17px;
+    right: 0;
+    padding: 19px 59px 24px 28px;
+    border: 1px solid #666;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    color: #777;
+    letter-spacing: -0.5px;
+    white-space: nowrap
+}
+
+.section__main .box__ad-tooltip .text__information.text__information--active {
+    display: block
+}
+
+.section__main .box__ad-tooltip .text__information .text__tit {
+    display: block;
+    color: #000
+}
+
+.section__main .text__price {
+    font-family: Gmarket Sans,'Gmarket Sans',sans-serif
+}
+
+/*mac bug (swipe + scale)*/
+.box__best .box__item .link__item .box__image, .section__main-market .box__item-banner, .section__main-market .box__item-content .link__item .box__image, .section__main-market .box__item-content .link__item .box__image .image, .box__homeshopping .box__item .link__item .box__image, .box__superdeal .box__item .link__item .box__image, .box__overseas .box__item .box__title-banner, .box__g9 .box__item .box__title-banner, .box__focus .box__item .link__item .box__image, .box__power .box__item .link__item .box__image, .box__chance .box__item .link__item .box__image {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0)
+}
+
+/*section__main-top*/
+.section__main-top {
+    position: relative;
+    height: 400px
+}
+
+.section__main-top:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.05)
+}
+
+.section__main-top .section__main-inner {
+    padding-left: 224px;
+    box-sizing: border-box
+}
+
+.section__main-top .box__category {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 224px;
+    height: 400px
+}
+
+.section__main-top .box__category:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    left: -25px;
+    width: 25px;
+    height: 400px;
+    background: url(//pics.gmarket.co.kr/pc/single/kr/homemain/image__cagegory-dimmed.png) no-repeat
+}
+
+.section__main-top .box__category .box__category-all-layer:after {
+    display: none
+}
+
+.section__main-top .box__category .list-item__1depth.list-item__1depth--active:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5
+}
+
+.section__main-top .box__category .box__category-all-layer .box__category-2depth:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #e5e5e5
+}
+
+.section__main-top .box__promotion .box__item {
+    position: relative;
+    height: 400px
+}
+
+.section__main-top .box__dimmed-left, .section__main-top .box__dimmed-right {
+    content: '';
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    height: 100%;
+    ;background-color: rgba(37, 39, 41, 0.3);
+    cursor: pointer
+}
+
+.section__main-top .box__dimmed-left {
+    left: 0;
+    right: 50%;
+    margin-right: 600px
+}
+
+.section__main-top .box__dimmed-right {
+    left: 50%;
+    right: 0;
+    margin-left: 600px
+}
+
+.section__main-top .box__promotion .box__image {
+    height: 400px
+}
+
+.section__main-top .box__promotion .box__image .image {
+    width: 100%;
+    height: 100%
+}
+
+.section__main-top .box__promotion .box__tool {
+    overflow: hidden;
+    position: absolute;
+    bottom: 18px;
+    right: 19px;
+    z-index: 10
+}
+
+.section__main-top .box__promotion .box__tool .swiper-pagination {
+    float: left;
+    position: static;
+    z-index: 0;
+    width: 76px;
+    height: 40px;
+    margin-left: 6px;
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sprite__homemain.svg) -332px -121px no-repeat;
+    font-size: 14px;
+    color: #fff;
+    line-height: 42px;
+    font-family: Gmarket Sans,'Gmarket Sans',sans-serif
+}
+
+.section__main-top .box__promotion .box__tool .swiper-pagination-current {
+    font-weight: bold
+}
+
+.section__main-top .box__promotion .box__tool .button__play-control {
+    float: left
+}
+
+.section__main-top .box__promotion .box__tool .button__play-control.button__play-control--active .sprite__homemain {
+    background-position: -410px 0
+}
+
+.section__main-top .box__promotion .box__tool .button__play-control .sprite__homemain {
+    position: relative;
+    z-index: -1;
+    width: 40px;
+    height: 40px;
+    background-position: -248px -46px
+}
+
+.section__main-top .box__promotion .box__tool .button__more {
+    float: left;
+    margin-left: 1px
+}
+
+.section__main-top .box__promotion .box__tool .button__more .sprite__homemain {
+    position: relative;
+    z-index: -1;
+    width: 40px;
+    height: 40px;
+    background-position: -292px -46px
+}
+
+.section__main-top .box__promotion .image__ad {
+    position: absolute;
+    top: 11px;
+    right: 11px
+}
+
+.section__main-top .box__promotion .image__ad .sprite__homemain {
+    width: 34px;
+    height: 24px;
+    background-position: -412px -121px
+}
+
+.section__main-top .box__promotion .swiper-button-prev, .section__main-top .box__promotion .swiper-button-next {
+    top: 167px;
+    width: auto;
+    height: auto;
+    margin: 0;
+    background: none;
+    padding: 4px
+}
+
+.section__main-top .box__promotion .swiper-button-prev {
+    left: 21px
+}
+
+.section__main-top .box__promotion .swiper-button-next {
+    right: 21px
+}
+
+.section__main-top .box__promotion .swiper-button-prev .sprite__homemain {
+    position: relative;
+    z-index: -1;
+    width: 38px;
+    height: 62px;
+    background-position: -248px -90px
+}
+
+.section__main-top .box__promotion .swiper-button-next .sprite__homemain {
+    position: relative;
+    z-index: -1;
+    width: 38px;
+    height: 62px;
+    background-position: -290px -90px
+}
+
+/*promotionlayer*/
+.section__all-promotion {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5010;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-sizing: border-box
+}
+
+.section__all-promotion .box__item {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    padding: 0 55px;
+    box-sizing: border-box;
+}
+
+.section__all-promotion .box__item::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px
+}
+
+.section__all-promotion .box__item::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(255,255,255,.6);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.6)
+}
+
+.section__all-promotion .box__item .button__closed {
+    position: absolute;
+    top: 0;
+    margin-left: -2px
+}
+
+.section__all-promotion .box__item .button__closed .sprite__homemain {
+    width: 55px;
+    height: 55px;
+    background-position: -396px -44px
+}
+
+.section__all-promotion .list__item {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.section__all-promotion .list__item .list-item {
+    position: relative;
+    float: left;
+    max-width: 719px;
+    width: 50%
+}
+
+.section__all-promotion .list__item .image__ad {
+    position: absolute;
+    top: 11px;
+    right: 11px
+}
+
+.section__all-promotion .list__item .image__ad .sprite__homemain {
+    width: 34px;
+    height: 24px;
+    background-position: -412px -121px
+}
+
+.section__all-promotion .list__item .link__item {
+    display: block;
+    padding: 0 2px 2px 0
+}
+
+.section__all-promotion .list__item .box__image .image {
+    width: 100%;
+    height: 100%
+}
+
+@media screen and (max-width: 1560px) {
+    .section__all-promotion .box__item .button__closed {
+        position:fixed;
+        top: 0
+    }
+}
+
+/*best*/
+.section__main-best {
+    padding-top: 50px
+}
+
+.section__main-best .section__main-inner {
+    position: relative;
+    width: 1232px;
+    margin: 0 auto
+}
+
+.section__main-best .box__best .text__title {
+    padding-left: 16px
+}
+
+.box__best .link__more {
+    top: 8px;
+    right: 16px
+}
+
+.box__best .box__item {
+    position: relative;
+    margin-top: 30px
+}
+
+.box__best .box__item .box__swiper-container {
+    overflow: hidden
+}
+
+.box__best .box__item .box__swiper-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1px;
+    z-index: 10;
+    width: 13px;
+    height: 100%;
+    background: url(//pics.gmarket.co.kr/pc/single/kr/homemain/image__best-dimmed-left.png) no-repeat 100% 0
+}
+
+.box__best .box__item .box__swiper-container:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 13px;
+    height: 100%;
+    background: url(//pics.gmarket.co.kr/pc/single/kr/homemain/image__best-dimmed-right.png) no-repeat 100% 0
+}
+
+.box__best .box__item .list__item {
+    overflow: hidden;
+    text-align: center;
+    font-size: 0
+}
+
+.box__best .box__item .list-item {
+    display: inline-block;
+    width: 224px;
+    padding: 0 10px;
+    vertical-align: top
+}
+
+.box__best .box__item .list-item:first-child {
+    margin-left: 0
+}
+
+.box__best .box__item .link__item {
+    display: block;
+    position: relative;
+    color: #222
+}
+
+.box__best .box__item .link__item .text__rank {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    z-index: 30;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background-color: #00c01e;
+    font-family: Gmarket Sans,'Gmarket Sans',sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 48px;
+    text-align: center;
+    transform: translateZ(0);
+}
+
+.box__best .box__item .link__item .text__rank:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: 45px;
+    height: 45px;
+    border: 1px solid rgba(0,0,0, 0.05);
+    border-radius: 50%
+}
+
+.box__best .box__item .link__item .box__bigs-tag {
+    position: absolute;
+    top: 0;
+    left: 34px;
+    z-index: 31;
+    width: 64px;
+    height: 77px
+}
+
+.box__best .box__item .link__item .box__bigs-tag .image {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -1px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.box__best .box__item .link__item .box__bigs-tag .image__bigsmileday {
+    margin-top: -4px
+}
+
+.box__best .box__item .link__item .box__image {
+    overflow: hidden;
+    position: relative;
+    width: 224px;
+    height: 224px;
+    margin: 0 auto;
+    border-radius: 50%
+}
+
+.box__best .box__item .link__item .box__image:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(0,0,0, 0.03);
+    border-radius: 50%
+}
+
+.box__best .box__item .link__item .box__image:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    border: 1px solid rgba(0,0,0, 0.07);
+    border-radius: 50%
+}
+
+.box__best .box__item .link__item .box__image .image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: -webkit-transform .2s cubic-bezier(.165,.84,.44,1);
+    transition: transform .2s cubic-bezier(.165,.84,.44,1);
+    transition: transform .2s cubic-bezier(.165,.84,.44,1),-webkit-transform .2s cubic-bezier(.165,.84,.44,1)
+}
+
+.box__best .box__item .link__item:hover .box__image .image {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1)
+}
+
+.box__best .box__item .link__item .box__information {
+    width: 200px;
+    margin: 18px auto 0;
+}
+
+.box__best .box__item .link__item .box__information .text__name {
+    overflow: hidden;
+    height: 38px;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.5px
+}
+
+.box__best .box__item .link__item .box__information .box__price {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #424242
+}
+
+.box__best .box__item .link__item .box__information .box__price .text__price {
+    font-size: 19px;
+    font-weight: 700
+}
+
+.box__best .box__item .link__item .box__information .box__price .text__price-text {
+    position: relative;
+    top: -2px;
+    font-size: 19px;
+    font-weight: bold
+}
+
+.box__best .box__item .link__item .box__information .box__price .text__unit {
+    margin-left: 1px
+}
+
+.box__best .box__item .button__prev, .box__best .box__item .button__next {
+    overflow: hidden;
+    position: absolute;
+    top: 87px;
+    margin: 0;
+    padding: 4px;
+    z-index: 30
+}
+
+.box__best .box__item .button__prev {
+    left: -4px
+}
+
+.box__best .box__item .button__next {
+    right: -4px
+}
+
+.box__best .box__item .button__next:focus {
+    outline: -webkit-focus-ring-color auto 1px
+}
+
+.box__best .box__item .button__prev .sprite__homemain {
+    position: relative;
+    z-index: -1;
+    width: 42px;
+    height: 42px;
+    background-position: 0 0
+}
+
+.box__best .box__item .button__next .sprite__homemain {
+    position: relative;
+    z-index: -1;
+    width: 42px;
+    height: 42px;
+    background-position: -42px 0
+}
+
+.box__best .box__item .button__prev .sprite__homemain:before {
+    display: block;
+    opacity: 0;
+    width: 42px;
+    height: 42px;
+    content: '';
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sprite__homemain.svg) -454px 0 no-repeat;
+    transition: opacity ease 0.25s
+}
+
+.box__best .box__item .button__next .sprite__homemain:before {
+    display: block;
+    opacity: 0;
+    width: 42px;
+    height: 42px;
+    content: '';
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sprite__homemain.svg) -496px 0 no-repeat;
+    transition: opacity ease 0.25s
+}
+
+.box__best .box__item .button__prev:hover .sprite__homemain:before {
+    opacity: 1;
+    transition: opacity ease 0.25s
+}
+
+.box__best .box__item .button__next:hover .sprite__homemain:before {
+    opacity: 1;
+    transition: opacity ease 0.25s
+}
+
+/*market*/
+.section__main-market {
+    padding-top: 64px
+}
+
+.section__main-market .box__expressshop {
+    overflow: hidden;
+    position: relative;
+    padding-top: 27px;
+    margin-top: 66px;
+    clear: both
+}
+
+.section__main-market .box__expressshop .box__item-tab {
+    float: left;
+    width: 678px;
+    height: 408px;
+    padding: 0 97px;
+    margin-top: 18px;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px
+}
+
+.section__main-market .box__expressshop .list__item-tab .box__item-header {
+    top: 20px
+}
+
+.section__main-market .box__expressshop .box__item-banner {
+    float: left;
+    width: 300px;
+    margin-right: 25px
+}
+
+.section__main-market .box__expressshop .box__item-banner .box__information {
+    height: 370px;
+    padding: 40px 0 0;
+    text-align: center
+}
+
+.section__main-market .box__expressshop .box__item-banner .box__information .text__banner-title {
+    margin: 20px auto 0;
+    text-align: center
+}
+
+.section__main-market .box__expressshop .box__item-banner .box__information .text__banner-sub-title {
+    margin-top: 14px
+}
+
+.section__main-market .box__expressshop .box__item-banner .box__image {
+    top: 210px;
+    right: 70px
+}
+
+.section__main-market .box__expressshop .box__item-banner .button__prev, .section__main-market .box__expressshop .box__item-banner .button__next {
+    top: 210px;
+    bottom: 40px
+}
+
+.section__main-market .box__expressshop .box__item-banner .button__prev .sprite__homemain, .section__main-market .box__expressshop .box__item-banner .button__next .sprite__homemain {
+    margin-top: 63px
+}
+
+.section__main-market .box__expressshop .box__item-content {
+    padding-top: 76px;
+    margin: 0 -97px
+}
+
+.section__main-market .box__expressshop .box__item-content .list__item {
+    margin: 0 30px
+}
+
+.section__main-market .box__expressshop .box__item-content .list-item {
+    width: 33.33%;
+    padding-left: 0;
+    padding-right: 10px
+}
+
+.section__main-market .box__expressshop .box__item-content .link__more-bottom {
+    width: 350px;
+    margin: 0 auto
+}
+
+.section__main-market .box__smilefresh {
+    position: relative;
+    float: left;
+    width: 574px
+}
+
+.section__main-market .box__smiledelivery {
+    overflow: hidden;
+    padding-left: 52px
+}
+
+.section__main-market .box__item-banner {
+    overflow: hidden;
+    position: relative;
+    margin-top: 18px;
+    border-radius: 10px
+}
+
+.section__main-market .box__item-banner .link__item {
+    display: block;
+    transition: background-color ease 0.2s
+}
+
+.section__main-market .box__item-banner .link__item--gsfresh, .section__main-market .box__item-banner .link__item--lotte {
+    background-color: #81c348
+}
+
+.section__main-market .box__item-banner .link__item--homeplus {
+    background-color: #e14a4f
+}
+
+.section__main-market .box__item-banner .link__item--lottemart {
+    background-color: #e0454a
+}
+
+.section__main-market .box__item-banner .link__item--delivery {
+    background-color: #2d8ce6
+}
+
+.section__main-market .box__item-banner .link__item--gsfresh .image__logo .sprite__homemain {
+    width: 123px;
+    height: 21px;
+    margin-left: 2px;
+    background-position: 0 -288px
+}
+
+.section__main-market .box__item-banner .link__item--homeplus .image__logo .sprite__homemain {
+    width: 102px;
+    height: 21px;
+    background-position: 0 -228px
+}
+
+.section__main-market .box__item-banner .link__item--lottemart .image__logo .sprite__homemain {
+    width: 108px;
+    height: 20px;
+    background-size: 108px 20px;
+    background: url(//pics.gmarket.co.kr/pc/single/kr/homemain/logo__lottemart-white-big.svg);
+    background-repeat: no-repeat
+}
+
+.section__main-market .box__item-banner .link__item--lotte .image__logo .sprite__homemain {
+    width: 120px;
+    height: 21px;
+    background-position: 0 -252px
+}
+
+.section__main-market .box__item-banner .link__item--delivery .image__logo .sprite__homemain {
+    width: 105px;
+    height: 22px;
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sp_homemain_2x.png?v=20220811) no-repeat -41px -24px;
+    background-size: 170px auto
+}
+
+.section__main-market .box__item-banner .link__item--smilefresh {
+    background: linear-gradient(111deg, #067dfd -7%, #00c3a0 46%, #00c400 100%)
+}
+
+.section__main-market .box__item-banner .link__item--smilefresh .image__logo .sprite__homemain {
+    width: 120px;
+    height: 22px;
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sp_homemain_2x.png?v=20220811) no-repeat -41px 0;
+    background-size: 170px auto
+}
+
+.section__main-market .box__item-banner .box__information {
+    position: relative;
+    height: 186px;
+    padding: 36px 261px 0 81px
+}
+
+.section__main-market .box__item-banner .box__information .text__banner-title {
+    overflow: hidden;
+    width: 230px;
+    margin-top: 16px;
+    font-family: Gmarket Sans,'Gmarket Sans',sans-serif;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: -2px;
+    line-height: 39px;
+    text-align: left
+}
+
+.section__main-market .box__smiledelivery .box__item-banner .box__information .text__banner-title {
+    margin-top: 14px
+}
+
+.section__main-market .box__item-banner .box__information .text__banner-title .text {
+    overflow: hidden;
+    display: block;
+    height: 39px;
+    word-break: break-all
+}
+
+.section__main-market .box__item-banner .box__information .text__banner-sub-title {
+    overflow: hidden;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+    opacity: 0.9;
+    letter-spacing: -1px
+}
+
+.section__main-market .box__item-banner .box__image {
+    overflow: hidden;
+    position: absolute;
+    top: 31px;
+    right: 72px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%
+}
+
+.section__main-market .box__item-banner .box__image .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%
+}
+
+.section__main-market .box__item-banner .button__prev, .section__main-market .box__item-banner .button__next {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 66px;
+    height: auto;
+    bottom: 0;
+    z-index: 10;
+    margin: 0;
+    line-height: 999px
+}
+
+.section__main-market .box__item-banner .button__prev {
+    left: 0;
+}
+
+.section__main-market .box__item-banner .button__next {
+    right: 0;
+}
+
+.section__main-market .box__item-banner .button__prev .sprite__homemain {
+    position: relative;
+    z-index: -1;
+    width: 23px;
+    height: 44px;
+    margin: 94px 0 0 2px;
+    background-position: -88px 0
+}
+
+.section__main-market .box__item-banner .button__next .sprite__homemain {
+    position: relative;
+    z-index: -1;
+    width: 23px;
+    height: 44px;
+    margin: 94px 2px 0 0;
+    background-position: -115px 0
+}
+
+/*tab*/
+.section__main-market .box__item-tab {
+    overflow: hidden;
+    margin-top: 20px
+}
+
+.section__main-market .box__item-tab .list__item-tab {
+    position: relative
+}
+
+.section__main-market .list__item-tab .box__item-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    text-align: center
+}
+
+.section__main-market .list__item-tab .box__item-header:before {
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 1px;
+    height: 17px;
+    background-color: #ddd
+}
+
+.section__main-market .list__item-tab .list-item:first-child .box__item-header:before {
+    display: none
+}
+
+.section__main-market .list__item-tab .list-item:nth-child(3) .box__item-header {
+    left: 66.66%
+}
+
+.section__main-market .list__item-tab .list-item:nth-child(2) .box__item-header {
+    left: 33.33%
+}
+
+.section__main-market .list__item-tab .list-item.list-item--lottemart .box__item-header {
+    left: 75%
+}
+
+.section__main-market .list__item-tab .list-item.list-item--gs .box__item-header {
+    left: 50%
+}
+
+.section__main-market .list__item-tab .list-item.list-item--homeplus .box__item-header {
+    left: 25%
+}
+
+.section__main-market .list__item-tab .link__tab {
+    display: inline-block;
+    position: relative;
+    width: 134px;
+    height: 40px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #666;
+    line-height: 40px;
+    letter-spacing: -1px;
+    border-radius: 20px
+}
+
+.section__main-market .list__item-tab .list-item--active .link__tab {
+    background-color: #00c400;
+    font-weight: bold;
+    color: #fff
+}
+
+.section__main-market .list__item-tab .list-item--active .link__tab:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 20px
+}
+
+.section__main-market .list__item-tab .list-item--lotte.list-item--active .link__tab {
+    background-color: #81c348
+}
+
+.section__main-market .list__item-tab .list-item--lotte.list-item--active .sprite__homemain {
+    background-position: -154px -203px
+}
+
+.section__main-market .list__item-tab .list-item--lotte .sprite__homemain {
+    width: 106px;
+    height: 17px;
+    margin-top: 12px;
+    background-position: -154px -182px
+}
+
+.section__main-market .list__item-tab .list-item--gs.list-item--active .link__tab {
+    background-color: #81c348
+}
+
+.section__main-market .list__item-tab .list-item--gs.list-item--active .sprite__homemain {
+    background-position: -356px -203px
+}
+
+.section__main-market .list__item-tab .list-item--gs .sprite__homemain {
+    width: 109px;
+    height: 17px;
+    margin-top: 11px;
+    background-position: -356px -182px
+}
+
+.section__main-market .list__item-tab .list-item--lottemart.list-item--active .link__tab {
+    background-color: #e0454a
+}
+
+.section__main-market .list__item-tab .list-item--lottemart.list-item--active .sprite__homemain {
+    background-size: 87px 17px;
+    background: url(//pics.gmarket.co.kr/pc/single/kr/homemain/logo__lottemart-white.svg);
+    background-repeat: no-repeat
+}
+
+.section__main-market .list__item-tab .list-item--lottemart .sprite__homemain {
+    width: 87px;
+    height: 17px;
+    margin-top: 11px;
+    background-size: 87px 17px;
+    background: url(//pics.gmarket.co.kr/pc/single/kr/homemain/logo__lottemart.svg);
+    background-repeat: no-repeat
+}
+
+.section__main-market .list__item-tab .list-item--homeplus.list-item--active .link__tab {
+    background-color: #e0454a
+}
+
+.section__main-market .list__item-tab .list-item--homeplus.list-item--active .sprite__homemain {
+    background-position: -265px -203px
+}
+
+.section__main-market .list__item-tab .list-item--homeplus .sprite__homemain {
+    width: 87px;
+    height: 17px;
+    margin-top: 13px;
+    background-position: -265px -182px
+}
+
+.section__main-market .box__smiledelivery .list__item-tab .box__item-header {
+    width: 50%
+}
+
+.section__main-market .box__smiledelivery .list__item-tab .list-item--freedelivery .box__item-header {
+    left: 50%
+}
+
+.section__main-market .box__smiledelivery .list__item-tab .list-item--active .link__tab {
+    background-color: #3d3d73
+}
+
+.section__main-market .box__smilefresh .list__item-tab .box__item-header {
+    width: 33.33%
+}
+
+.section__main-market .box__smilefresh .list__item-tab.list__item-tab--two .box__item-header {
+    width: 50%
+}
+
+.section__main-market .box__smilefresh .list__item-tab.list__item-tab--two .list-item:nth-child(2) .box__item-header {
+    left: 50%
+}
+
+.section__main-market .box__smilefresh .list__item-tab.list__item-tab--one .box__item-header {
+    width: 100%
+}
+
+.section__main-market .box__expressshop .list__item-tab .link__tab {
+    width: auto;
+    padding: 0 15px
+}
+
+/*content*/
+.section__main-market .box__item-content {
+    display: none;
+    padding-top: 55px
+}
+
+.section__main-market .list-item.list-item--active .box__item-content {
+    display: block
+}
+
+.section__main-market .box__item-content .link__more-bottom {
+    display: block;
+    overflow: hidden;
+    height: 52px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 27px;
+    background-color: #fafafa;
+    color: #444;
+    line-height: 51px;
+    text-align: center
+}
+
+.section__main-market .box__item-content .link__more-bottom .sprite__homemain--after {
+    position: relative;
+    padding-right: 25px;
+    font-size: 16px;
+    color: #444
+}
+
+.section__main-market .box__item-content .link__more-bottom .sprite__homemain--after:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    margin-top: -9px;
+    background-position: 0 -44px
+}
+
+.section__main-market .box__item-content .list__item {
+    overflow: hidden;
+    margin-left: -28px;
+    padding-top: 20px;
+    border-top: 1px solid #ececec
+}
+
+.section__main-market .box__item-content .list-item {
+    float: left;
+    width: 50%;
+    margin-bottom: 20px;
+    padding-left: 28px;
+    box-sizing: border-box
+}
+
+.section__main-market .box__item-content .link__item {
+    position: relative;
+    display: block;
+    height: 100px;
+    padding: 0 0 0 116px
+}
+
+.section__main-market .box__item-content .link__item .box__image {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+    will-change: transform
+}
+
+.section__main-market .box__item-content .link__item .box__image:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px
+}
+
+.section__main-market .box__item-content .link__item .box__image .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    transition: -webkit-transform .2s cubic-bezier(.165,.84,.44,1);
+    transition: transform .2s cubic-bezier(.165,.84,.44,1);
+    transition: transform .2s cubic-bezier(.165,.84,.44,1),-webkit-transform .2s cubic-bezier(.165,.84,.44,1)
+}
+
+.section__main-market .box__item-content .link__item:hover .box__image .image {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05)
+}
+
+.section__main-market .box__item-content .link__item .box__bigs-tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 44px
+}
+
+.section__main-market .box__item-content .box__information {
+    overflow: hidden;
+    font-size: 0
+}
+
+.section__main-market .box__item-content .box__information .text__tag {
+    display: inline-block;
+    height: 18px;
+    padding: 0 4px;
+    font-size: 12px;
+    color: #fff;
+    line-height: 17px;
+    text-align: center;
+    vertical-align: top
+}
+
+.section__main-market .box__item-content .box__information .text__tag--shear {
+    background-color: #00b8a4
+}
+
+.section__main-market .box__item-content .box__information .text__tag--oneplus {
+    background-color: #feca06
+}
+
+.section__main-market .box__item-content .box__information .text__tag--even {
+    background-color: #3452b8
+}
+
+.section__main-market .box__item-content .box__information .text__tag--event {
+    background-color: #ff8c05
+}
+
+.section__main-market .box__item-content .box__information .text__tag--smilefresh {
+    background-color: #00c400
+}
+
+.section__main-market .box__item-content .box__information .text__tag--freedelivery {
+    background-color: #2d8ce6
+}
+
+.section__main-market .box__item-content .box__information .text__tag--rank {
+    width: 18px;
+    padding: 0;
+    background-color: rgba(45, 140, 230, 0.9)
+}
+
+.section__main-market .box__item-content .box__information .text__name {
+    overflow: hidden;
+    height: 38px;
+    margin-top: 6px;
+    font-size: 14px;
+    color: #444;
+    line-height: 19px
+}
+
+.section__main-market .box__item-content .box__information .text__name .text__keyword {
+    margin-right: 3px;
+    color: #5e8bb4
+}
+
+.section__main-market .box__item-content .box__information .box__price {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #424242
+}
+
+.section__main-market .box__item-content .box__information .box__price .text__price {
+    font-size: 17px;
+    font-weight: bold
+}
+
+.section__main-market .box__item-content .box__information .box__price .text__price-text {
+    font-size: 16px;
+    font-weight: bold
+}
+
+.section__main-market .box__item-content .list-item--soldout .box__information .box__price {
+    margin-top: 7px
+}
+
+.section__main-market .box__item-tab.list__item-tab--one .list__item-tab .list-item .box__item-content {
+    display: block;
+}
+
+.section__main-market .box__item-tab.list__item-tab--one .list__item-tab .list-item .box__item-header {
+    display: block;
+    left: 0;
+    width: 100%;
+}
+
+.section__main-market .box__item-tab.list__item-tab--one .list__item-tab .list-item .box__item-header .box__item--title .sprite__homemain {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 0;
+}
+
+.section__main-market .box__item-tab.list__item-tab--one .list__item-tab .list-item .box__item-header .box__item--title .text__desc {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+    line-height: 17px;
+    color: #000;
+    font-weight: normal;
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left: 1px solid #eee;
+}
+
+/*service*/
+.section__main-service {
+    padding-top: 69px
+}
+
+.box__service .text__title {
+    font-family: Gmarket Sans,'Gmarket Sans',sans-serif;
+    font-weight: normal
+}
+
+.box__service .box__item {
+    position: relative;
+    margin: 30px -12px 0 -12px
+}
+
+.box__service .list__item {
+    overflow: hidden
+}
+
+.box__service .list__item .list-item {
+    float: left;
+    width: 102px
+}
+
+.box__service .list__item .link__item {
+    display: block;
+    position: relative
+}
+
+.box__service .list__item .box__image {
+    position: relative;
+    overflow: hidden;
+    width: 68px;
+    height: 68px;
+    margin: 0 auto
+}
+
+.box__service .list__item .box__image .image {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+.box__service .list__item .text-service {
+    display: block;
+    overflow: hidden;
+    height: 20px;
+    margin-top: 9px;
+    font-size: 14px;
+    color: #222;
+    text-align: center
+}
+
+.box__service .list__item .image__new {
+    position: absolute;
+    top: 0;
+    right: 16px;
+    width: 22px;
+    height: 22px;
+    background-position: -44px -44px
+}
+
+/*banner*/
+.section__main-banner {
+    padding-top: 68px;
+    padding-bottom: 4px
+}
+
+.section__main-top + .section__main-banner {
+    padding-top: 40px
+}
+
+.section__main-banner .link__banner {
+    display: block;
+    overflow: hidden;
+    height: 100px;
+    border-radius: 6px
+}
+
+.section__main-banner .link__banner .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px
+}
+
+/*homeshopping*/
+.section__main-homeshopping {
+    position: relative;
+    height: 483px;
+    padding: 50px 0 70px;
+    margin-top: 60px;
+    box-sizing: border-box
+}
+
+.section__main-homeshopping .section__main-inner {
+    height: 100%
+}
+
+.section__main-service + .section__main-homeshopping {
+    margin-top: 40px
+}
+
+.section__main-service + .section__main-superdeal {
+    margin-top: 50px
+}
+
+.box__homeshopping .text__title {
+    line-height: 24px
+}
+
+.box__homeshopping .text__title .image__on-air {
+    display: inline-block;
+    width: 78px;
+    height: 28px;
+    margin: 0 0 0 3px;
+    background-position: 0 -122px;
+    vertical-align: top
+}
+
+.box__homeshopping .box__item {
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    width: 2020px;
+    margin-left: -1010px
+}
+
+.box__homeshopping .box__item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 151px;
+    height: 100%;
+    background: url(//pics.gmarket.co.kr/pc/single/kr/homemain/image__homeshopping-dimmed-left.png) no-repeat 100% 0
+}
+
+.box__homeshopping .box__item:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 151px;
+    height: 100%;
+    background: url(//pics.gmarket.co.kr/pc/single/kr/homemain/image__homeshopping-dimmed-right.png) no-repeat 100% 0
+}
+
+.box__homeshopping .swiper-slide {
+    width: 1200px
+}
+
+.box__homeshopping .box__item-inner {
+    float: left;
+    position: relative;
+    width: 380px;
+    margin-left: 30px
+}
+
+.box__homeshopping .box__item-inner:first-child {
+    margin-left: 0
+}
+
+.box__homeshopping .box__item-inner .link__item {
+    display: block;
+    color: #222
+}
+
+.box__homeshopping .box__item-inner .link__item .box__bigs-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    width: 76px;
+    height: 76px
+}
+
+.box__homeshopping .box__item-inner .link__item .box__bigs-tag .image {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.box__homeshopping .swiper-slide-active .box__homeshopping-timer, .box__homeshopping .swiper-slide-active .link__mall, .box__homeshopping .swiper-slide-active .box__information {
+    display: block
+}
+
+.box__homeshopping .swiper-slide-prev, .box__homeshopping .swiper-slide-next {
+    opacity: 0.2
+}
+
+.box__homeshopping .swiper-slide-prev:after {
+    display: none
+}
+
+.box__homeshopping .swiper-slide .box__image {
+    overflow: hidden;
+    position: relative;
+    width: 380px;
+    height: 198px;
+    border-radius: 6px 6px 0 0
+}
+
+.box__homeshopping .swiper-slide .box__image:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: rgba(37, 39, 41, 0.3)
+}
+
+.box__homeshopping .swiper-slide .box__image:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(//pics.gmarket.co.kr/pc/single/kr/homemain/image__homeshopping-dimmed-item.png) no-repeat
+}
+
+.box__homeshopping .swiper-slide .link__item .box__image > .image {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    line-height: 999px;
+    transition: -webkit-transform .2s cubic-bezier(.165,.84,.44,1);
+    transition: transform .2s cubic-bezier(.165,.84,.44,1);
+    transition: transform .2s cubic-bezier(.165,.84,.44,1),-webkit-transform .2s cubic-bezier(.165,.84,.44,1)
+}
+
+.box__homeshopping .swiper-slide .link__item:hover .box__image > .image {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05)
+}
+
+.box__homeshopping .swiper-slide-prev .box__image:after, .box__homeshopping .swiper-slide-next .box__image:after {
+    display: none
+}
+
+.box__homeshopping .box__homeshopping-timer {
+    display: none
+}
+
+.box__homeshopping .box__homeshopping-timer .image__play:after {
+    content: '';
+    position: absolute;
+    bottom: 30px;
+    right: 24px;
+    z-index: 10;
+    width: 35px;
+    height: 44px;
+    background-position: -200px -118px
+}
+
+.box__homeshopping .box__homeshopping-timer .box__state {
+    overflow: hidden;
+    position: absolute;
+    bottom: 18px;
+    left: 16px;
+    z-index: 10
+}
+
+.box__homeshopping .box__homeshopping-timer .image__state-live, .box__homeshopping .box__homeshopping-timer .image__state-special {
+    float: left;
+    height: 22px
+}
+
+.box__homeshopping .box__homeshopping-timer .image__state-live {
+    width: 48px;
+    background-position: -148px -118px
+}
+
+.box__homeshopping .box__homeshopping-timer .image__state-special {
+    width: 61px;
+    background-position: -82px -118px
+}
+
+.box__homeshopping .box__homeshopping-timer .box__state .text__play-time {
+    float: left;
+    margin-left: 5px;
+    font-family: Gmarket Sans,'Gmarket Sans',sans-serif;
+    font-size: 12px;
+    color: #fff;
+    line-height: 22px
+}
+
+.box__homeshopping .box__homeshopping-timer .box__progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 4px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.box__homeshopping .box__homeshopping-timer .box__progress .progressing_time {
+    display: block;
+    height: 4px;
+    background-color: #41d241
+}
+
+.box__homeshopping .box__information {
+    display: none;
+    position: relative;
+    margin-top: 19px;
+    padding-right: 98px
+}
+
+.box__homeshopping .box__information .text-name {
+    overflow: hidden;
+    height: 52px;
+    font-size: 19px;
+    color: #222;
+    line-height: 26px;
+    letter-spacing: -1px
+}
+
+.box__homeshopping .box__information .box__price {
+    margin-top: 11px;
+    font-size: 16px;
+    color: #424242
+}
+
+.box__homeshopping .box__information .box__price .text__price {
+    font-size: 19px;
+    font-weight: bold
+}
+
+.box__homeshopping .link__mall {
+    display: none;
+    position: absolute;
+    bottom: 3px;
+    right: 10px;
+    color: #888;
+    text-align: center
+}
+
+.box__homeshopping .link__mall .image {
+    display: block;
+    width: 62px;
+    height: 62px;
+    margin: 0 auto
+}
+
+.box__homeshopping .link__mall .text {
+    display: block;
+    margin-top: 3px;
+    font-size: 14px;
+    letter-spacing: -1px
+}
+
+.box__homeshopping .swiper-button-prev, .box__homeshopping .swiper-button-next {
+    top: 71px;
+    width: auto;
+    height: auto;
+    margin: 0;
+    background: none;
+    padding: 4px
+}
+
+.box__homeshopping .swiper-button-prev {
+    left: 50%;
+    margin-left: -620px
+}
+
+.box__homeshopping .swiper-button-next {
+    right: 50%;
+    margin-right: -620px
+}
+
+.box__homeshopping .swiper-button-prev .sprite__homemain, .box__homeshopping .swiper-button-next .sprite__homemain {
+    position: relative;
+    z-index: -1;
+    width: 48px;
+    height: 48px
+}
+
+.box__homeshopping .swiper-button-prev .sprite__homemain {
+    background-position: -142px 0
+}
+
+.box__homeshopping .swiper-button-next .sprite__homemain {
+    background-position: -194px 0
+}
+
+.box__homeshopping .box__item .swiper-button-prev .sprite__homemain:before {
+    display: block;
+    opacity: 0;
+    width: 48px;
+    height: 48px;
+    content: '';
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sprite__homemain.svg) -542px 0 no-repeat;
+    transition: opacity ease 0.25s
+}
+
+.box__homeshopping .box__item .swiper-button-next .sprite__homemain:before {
+    display: block;
+    opacity: 0;
+    width: 48px;
+    height: 48px;
+    content: '';
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sprite__homemain.svg) -594px 0 no-repeat;
+    transition: opacity ease 0.25s
+}
+
+.box__homeshopping .box__item .swiper-button-prev:hover .sprite__homemain:before {
+    opacity: 1;
+    transition: opacity ease 0.25s
+}
+
+.box__homeshopping .box__item .swiper-button-next:hover .sprite__homemain:before {
+    opacity: 1;
+    transition: opacity ease 0.25s
+}
+
+/*section__main-catch*/
+.section__main-catch {
+    padding: 102px 0 91px
+}
+
+.box__catch .link__week {
+    position: absolute;
+    top: -52px;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    font-family: Gmarket Sans,'Gmarket Sans',sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #280082;
+    letter-spacing: -1px
+}
+
+.box__catch .link__week .image__catch {
+    display: block;
+    width: 76px;
+    height: 56px;
+    margin: 0 auto 11px;
+    background-position: 0 -153px
+}
+
+.box__catch .box__item {
+    margin-top: 30px
+}
+
+.box__catch .list__item {
+    overflow: hidden
+}
+
+.box__catch .list__item .list-item {
+    position: relative;
+    float: left;
+    width: 380px;
+    height: 485px;
+    margin-left: 30px
+}
+
+.box__catch .list__item .list-item:first-child {
+    margin-left: 0
+}
+
+.box__catch .list__item .box__image {
+    overflow: hidden;
+    height: 485px;
+    border-radius: 6px
+}
+
+.box__catch .list__item .box__image .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px
+}
+
+.box__catch .list__item .list-item--add .link__item {
+    display: block
+}
+
+.box__catch .list__item .list-item--add .link__item + .link__sub-item {
+    margin-top: 27px
+}
+
+.box__catch .list__item .list-item--add .link__item .box__image {
+    height: 222px;
+    border-radius: 6px 6px 0 0
+}
+
+.box__catch .list__item .list-item--add .link__item .box__image .image {
+    border-radius: 6px 6px 0 0
+}
+
+.box__catch .list__item .list-item--add .link__sub-item {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    height: 103px;
+    padding: 7px 0 0 124px;
+    margin-top: 16px
+}
+
+.box__catch .list__item .list-item--add .link__sub-item:after {
+    content: '';
+    position: absolute;
+    top: 14px;
+    right: 0;
+    width: 60px;
+    height: 13px;
+    background-position: -84px -100px
+}
+
+.box__catch .list__item .list-item--add .link__sub-item .box__image {
+    overflow: hidden;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4px
+}
+
+.box__catch .list__item .list-item--add .link__sub-item .box__image .image {
+    border-radius: 4px
+}
+
+.box__catch .list__item .list-item--add .link__sub-item .text__title {
+    overflow: hidden;
+    display: block;
+    top: 0;
+    margin-right: 70px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    line-height: 24px
+}
+
+.box__catch .list__item .list-item--add .link__sub-item .text__title .text {
+    overflow: hidden;
+    display: block;
+    height: 24px;
+    word-break: break-all
+}
+
+.box__catch .list__item .list-item--add .link__sub-item .text__sub-title {
+    display: block;
+    overflow: hidden;
+    height: 38px;
+    margin-top: 6px;
+    font-size: 13px;
+    color: #777;
+    line-height: 19px;
+    letter-spacing: -0.5px;
+    word-break: break-all
+}
+
+/*section__main-superdeal*/
+.section__main-superdeal {
+    position: relative;
+    padding-top: 70px
+}
+
+.section__main-superdeal:after {
+    content: '';
+    position: absolute;
+    height: 300px;
+    top: 0;
+    width: 100%;
+    background-color: #00c400
+}
+
+.box__superdeal {
+    overflow: hidden;
+    position: relative;
+    z-index: 10
+}
+
+.box__superdeal .text__title {
+    position: relative;
+    z-index: 10;
+    width: 160px;
+    height: 44px
+}
+
+.box__superdeal .text__title .sprite__homemain {
+    display: block;
+    height: 100%;
+    background-position: -84px -52px
+}
+
+.box__superdeal .link__more {
+    top: 25px;
+    color: #fff
+}
+
+.box__superdeal .link__more:after {
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sp_homemain_2x.png) no-repeat -97px -48px/170px auto
+}
+
+.box__superdeal .box__item {
+    margin-top: 30px
+}
+
+.box__superdeal .box__item .box__image .image {
+    width: 100%;
+    height: 100%
+}
+
+.box__superdeal .box__item .list__item {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -24px
+}
+
+.box__superdeal .box__item .list-item {
+    position: relative;
+    float: left;
+    width: 384px;
+    height: auto;
+    margin: 0 0 50px 24px
+}
+
+.box__superdeal .box__item .link__item {
+    display: block
+}
+
+.box__superdeal .box__item .link__item .image__smileclub-tag {
+    position: absolute;
+    top: 12px;
+    right: 13px;
+    z-index: 10
+}
+
+.box__superdeal .box__item .link__item .image__smileclub-tag .sprite__homemain {
+    display: block;
+    width: 56px;
+    height: 81px;
+    background-position: -336px -36px
+}
+
+.box__superdeal .box__item .link__item .box__bigs-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 76px
+}
+
+.box__superdeal .box__item .link__item .box__bigs-tag .image {
+    width: 100%
+}
+
+.box__superdeal .box__item .link__item .box__image {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    width: 384px;
+    height: 0;
+    padding-top: 54.95%;
+    border-radius: 8px;
+    background: #eee;
+    white-space: nowrap;
+    font-size: 0
+}
+
+.box__superdeal .box__item .link__item .box__image .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    transition: -webkit-transform .2s cubic-bezier(.165,.84,.44,1);
+    transition: transform .2s cubic-bezier(.165,.84,.44,1);
+    transition: transform .2s cubic-bezier(.165,.84,.44,1),-webkit-transform .2s cubic-bezier(.165,.84,.44,1);
+    object-fit: fill
+}
+
+.box__superdeal .box__item .link__item:hover .box__image .image {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05)
+}
+
+.box__superdeal .list-item--homeshopping .link__item .box__image:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+.box__superdeal .box__homeshopping-timer .image__play:after {
+    content: '';
+    position: absolute;
+    top: 72px;
+    left: 50%;
+    margin-left: -28px;
+    z-index: 10;
+    width: 56px;
+    height: 56px;
+    background-position: -124px -228px
+}
+
+.box__superdeal .box__superdeal-label {
+    overflow: hidden;
+    position: absolute;
+    bottom: 11px;
+    left: 11px;
+    padding: 6px 7px 7px;
+    height: 27px;
+    font-family: 'Gmarket Sans',sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 16px;
+    border-radius: 4px;
+    box-sizing: border-box
+}
+
+.box__superdeal .box__timedeal-timer {
+    font-size: 0;
+    background: #067dfd
+}
+
+.box__superdeal .box__timedeal-timer:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+    background: url(//pics.gmarket.co.kr/pc/single/kr/homemain/icon__timedeal_320x320.gif) no-repeat 0 0/16px;
+    vertical-align: top
+}
+
+.box__superdeal .box__timedeal-timer .text__timedeal-title {
+    font-size: 12px;
+}
+
+.box__superdeal .box__timedeal-timer .text__timer {
+    margin-left: 2px
+}
+
+.box__superdeal .box__timedeal-timer .js-text__timer {
+    position: relative;
+    display: inline-block;
+    height: 14px;
+    margin-left: 2px;
+    font-size: 0;
+    vertical-align: top;
+    overflow: hidden
+}
+
+.box__superdeal .box__timedeal-timer .js-text__timer:before {
+    content: ":";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 17px;
+    font-family: 'Gmarket Sans',sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff
+}
+
+.box__superdeal .box__timedeal-timer .js-text__timer:after {
+    content: ":";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 38px;
+    font-family: 'Gmarket Sans',sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff
+}
+
+.box__superdeal .box__timedeal-timer .js-text__timer .text__hour, .box__superdeal .box__timedeal-timer .js-text__timer .text__minute, .box__superdeal .box__timedeal-timer .js-text__timer .text__second {
+    position: relative;
+    float: left;
+    display: block;
+    width: 17px;
+    height: 14px;
+    padding-right: 4px;
+    color: #fff;
+    text-align: center
+}
+
+.box__superdeal .box__timedeal-timer .js-text__timer .text__number {
+    display: block;
+    width: 17px;
+    font-family: 'Gmarket Sans',sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.box__superdeal .box__timedeal-timer .js-text__timer .text__number:nth-child(2) {
+    position: absolute;
+    top: -14px;
+    left: 0;
+}
+
+.box__superdeal .box__timedeal-timer .js-text__timer .text__second {
+    padding-right: 0
+}
+
+.box__superdeal .box__timedeal-timer .js-text__timer .move {
+    animation: moveTimer ease 0.6s infinite;
+}
+
+@keyframes moveTimer {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(14px);
+    }
+}
+
+.box__superdeal .box__limitdeal {
+    background: #ef2b2a
+}
+
+.box__superdeal .box__limitdeal:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-top: -1px;
+    margin-right: 2px;
+    background: url(//pics.gmarket.co.kr/pc/single/kr/homemain/icon__limitdeal_320x320.gif) no-repeat 0 0/16px;
+    vertical-align: top
+}
+
+.box__superdeal .box__recommend-deal {
+    background: #da120d
+}
+
+.box__superdeal .box__recommend-deal:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-top: -1px;
+    margin-right: 2px;
+    background: url(//pics.gmarket.co.kr/pc/single/kr/homemain/icon__recommend-deal_320x320.gif) no-repeat 0 0/16px;
+    vertical-align: top
+}
+
+.box__superdeal .box__limitdeal .text__count {
+    margin-left: 2px
+}
+
+.box__superdeal .box__homeshopping-timer .box__state {
+    overflow: hidden;
+    position: absolute;
+    bottom: 13px;
+    left: 10px;
+    z-index: 10;
+    font-size: 12px
+}
+
+.box__superdeal .box__homeshopping-timer .box__state .image__state-live, .box__superdeal .box__homeshopping-timer .box__state .image__state-special {
+    float: left;
+    height: 22px
+}
+
+.box__superdeal .box__homeshopping-timer .box__state .image__state-live {
+    width: 48px;
+    background-position: -148px -118px
+}
+
+.box__superdeal .box__homeshopping-timer .box__state .image__state-special {
+    width: 61px;
+    background-position: -82px -118px
+}
+
+.box__superdeal .box__homeshopping-timer .box__state .text__play-time {
+    float: left;
+    margin-left: 5px;
+    font-family: Gmarket Sans,'Gmarket Sans',sans-serif;
+    color: #fff;
+    line-height: 22px
+}
+
+.box__superdeal .box__homeshopping-timer .box__progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 3px;
+    background-color: rgba(0,0,0,0.3)
+}
+
+.box__superdeal .box__homeshopping-timer .box__progress .progressing_time {
+    display: block;
+    height: 4px;
+    background-color: #2fc939
+}
+
+.box__superdeal .box__information {
+    width: 320px;
+    margin: 12px 0 0 4px;
+    font-size: 0
+}
+
+.box__superdeal .box__information .box__price {
+    height: 42px;
+    color: #424242;
+    line-height: 42px
+}
+
+.box__superdeal .box__information .box__price .text__month {
+    padding-right: 2px;
+    font-size: 16px;
+    color: #424242
+}
+
+.box__superdeal .box__information .box__price .text__sale {
+    margin-right: 4px;
+    font-family: Gmarket Sans,'Gmarket Sans',sans-serif;
+    font-size: 19px;
+    color: #da120d
+}
+
+.box__superdeal .box__information .box__price .text__price {
+    padding-top: 3px;
+    font-size: 19px;
+    font-weight: bold
+}
+
+.box__superdeal .box__information .box__price .text__unit {
+    font-size: 16px;
+    font-weight: bold
+}
+
+.box__superdeal .box__information .box__price .text__price-text {
+    font-size: 19px;
+    font-weight: bold;
+    font-family: Gmarket Sans,'Gmarket Sans',sans-serif
+}
+
+.box__superdeal .box__information .box__price .text__unit + .rent-contract {
+    display: inline-block;
+    padding-left: 4px;
+    font-size: 12px;
+    color: #616161;
+    vertical-align: top;
+    letter-spacing: -0.5px;
+    font-family: 'Noto Sans KR', sans-serif
+}
+
+.box__superdeal .box__information .text__name {
+    display: block;
+    overflow: hidden;
+    height: 22px;
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #444;
+    letter-spacing: -0.5px;
+    word-break: break-all
+}
+
+.box__superdeal .box__information .box__tags {
+    margin-top: 12px;
+    font-size: 0
+}
+
+.box__superdeal .box__information .box__tags .text__tag {
+    display: inline-block;
+    font-size: 13px;
+    color: #999;
+    vertical-align: top;
+    letter-spacing: -0.5px
+}
+
+.box__superdeal .box__information .box__tags .text__tag + .text__tag {
+    position: relative;
+    padding-left: 13px
+}
+
+.box__superdeal .box__information .box__tags .text__tag + .text__tag:before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 6px;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #dedede
+}
+
+.box__superdeal .box__information .box__tags .text__tag.text__tag--new {
+    letter-spacing: 0
+}
+
+.box__superdeal .box__information .box__tags .text__tag.text__tag--sfc {
+    color: #2e8de5
+}
+
+.box__superdeal .box__information .box__tags .text__tag.text__tag--shipping {
+    position: relative;
+    padding-left: 23px;
+    font-weight: bold;
+    color: #067dfd
+}
+
+.box__superdeal .box__information .box__tags .text__tag.text__tag--shipping:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sp_homemain_2x.png) no-repeat -34px -74px/170px auto
+}
+
+.box__superdeal .box__information .box__tags .text__tag.text__tag--install {
+    position: relative;
+    padding-left: 23px;
+    font-weight: bold;
+    color: #4741c7
+}
+
+.box__superdeal .box__information .box__tags .text__tag.text__tag--install:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sp_homemain_2x.png) no-repeat -56px -74px/170px auto
+}
+
+.box__superdeal .box__information .box__tags .text__tag.text__tag--delivery .text__delivery-make {
+    color: #067dfd
+}
+
+.box__superdeal .box__information .box__tags .text__tag.text__tag--delivery .text__delivery-smileclub {
+    color: #864300
+}
+
+.box__superdeal .box__information .box__tags .text__tag.text__tag--delivery .text__delivery-smileclub:before, .box__superdeal .box__information .box__tags .text__tag.text__tag--delivery .text__delivery-holiday:before {
+    display: inline-block;
+    width: 39px;
+    height: 16px;
+    margin: -1px 4px 1px 0;
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sp_homemain_2x.png?v=20220811) no-repeat 0 0;
+    background-size: 170px auto;
+    vertical-align: middle;
+    content: ''
+}
+
+.box__superdeal .box__information .box__tags .text__tag.text__tag--delivery .text__delivery-holiday:before {
+    width: 37px;
+    background-position: 0px -18px
+}
+
+.box__superdeal .box__information .box__tags .text__tag.text__tag--delivery .text__delivery-date {
+    color: #2e8de5
+}
+
+.box__superdeal .box__information .box__tags .text__tag.text__tag--delivery .text__delivery-option {
+    color: #222
+}
+
+.box__superdeal .box__information .text__item--title {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 0
+}
+
+.box__superdeal .box__information .text__item--title .text__price-title {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Gmarket Sans';
+    color: #da120d;
+    line-height: 16px;
+    vertical-align: top
+}
+
+.box__superdeal .box__information .text__price--sale {
+    display: inline-block;
+    padding-left: 2px;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: 'Gmarket Sans';
+    color: #9e9e9e;
+    line-height: 16px;
+    vertical-align: top
+}
+
+.box__superdeal .box__information .text__price--sale .text__price {
+    font-size: 12px;
+    font-weight: normal
+}
+
+.box__superdeal .box__information .box__price--sale {
+    height: 24px;
+    font-size: 0;
+    color: #da120d;
+    line-height: 24px
+}
+
+.box__superdeal .box__information .box__price--sale .text__price--percent {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Gmarket Sans'
+}
+
+.box__superdeal .box__information .box__price--sale .text__price {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px
+}
+
+.box__superdeal .box__information .box__price--sale .text__price--percent + .text__price {
+    padding-left: 4px
+}
+
+.box__superdeal .box__information .box__price--coupon {
+    display: block;
+    height: auto;
+    font-size: 0;
+    line-height: normal
+}
+
+.box__superdeal .box__information .box__price--sale .icon__club {
+    display: inline-block;
+    width: 30px;
+    height: 14px;
+    margin-top: 6px;
+    padding-left: 4px;
+    vertical-align: top
+}
+
+.box__superdeal .box__information .box__price--sale .icon__club .image {
+    width: 100%
+}
+
+.box__superdeal .link__mall {
+    display: inline-block;
+    position: relative;
+    height: 32px;
+    padding: 0 18px 0 39px;
+    margin-top: 14px;
+    border: 1px solid #ddd;
+    border-radius: 17px;
+    font-size: 13px;
+    color: #666;
+    line-height: 30px;
+    letter-spacing: -1px
+}
+
+.box__superdeal .link__mall .text__unit {
+    position: relative;
+    top: -1px;
+    left: 6px;
+    padding-right: 6px;
+    font-size: 11px;
+    color: #999
+}
+
+.box__superdeal .link__mall .box__image {
+    overflow: hidden;
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%
+}
+
+.box__superdeal .button__favor {
+    position: absolute;
+    top: 223px;
+    right: 10px;
+    z-index: 10
+}
+
+.box__superdeal .button__favor .sprite__homemain {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sp_homemain_2x.png) no-repeat -78px -68px/170px auto
+}
+
+.box__superdeal .button__favor.button__favor--active .sprite__homemain {
+    background-position: -120px -68px
+}
+
+.box__superdeal .link__all-more {
+    display: block;
+    overflow: hidden;
+    width: 384px;
+    height: 52px;
+    margin: -1px auto 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 27px;
+    background-color: #fafafa;
+    font-size: 16px;
+    color: #444;
+    line-height: 50px;
+    text-align: center
+}
+
+.box__superdeal .link__all-more .sprite__homemain--after {
+    position: relative;
+    padding-right: 25px
+}
+
+.box__superdeal .link__all-more .sprite__homemain--after:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    margin-top: -9px;
+    background-position: 0 -44px
+}
+
+.box__superdeal .list-item--thema .link__item .box__image:after, .box__superdeal .list-item--brand .link__item .box__image:after {
+    display: none
+}
+
+.box__superdeal .list-item--keyword .box__image, .box__superdeal .list-item--thema .link__item .box__image, .box__superdeal .list-item--brand .link__item .box__image {
+    height: 375px;
+    padding-top: 0;
+    border-radius: 6px
+}
+
+.box__superdeal .list-item--keyword .box__image .image, .box__superdeal .list-item--thema .link__item .box__image .image, .box__superdeal .list-item--brand .link__item .box__image .image {
+    border-radius: 6px
+}
+
+.box__superdeal .box__item .list-item--thema .link__item:hover .box__image .image, .box__superdeal .box__item .list-item--brand .link__item:hover .box__image .image {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1)
+}
+
+.box__superdeal .list-item--keyword .box__image:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(37, 39, 41, 0.4);
+    border-radius: 6px
+}
+
+.box__superdeal .list-item--keyword .text__title {
+    position: absolute;
+    top: 74px;
+    left: 36px;
+    width: 316px;
+    height: auto
+}
+
+.box__superdeal .list-item--keyword .text__title .text {
+    display: block;
+    overflow: hidden;
+    height: 29px;
+    margin-top: 5px;
+    line-height: 28px;
+    font-size: 24px;
+    font-weight: bold;
+    word-break: break-all;
+    letter-spacing: -1px
+}
+
+.box__superdeal .box__information .text__itemcard-title {
+    display: block;
+    overflow: hidden;
+    height: 20px;
+    margin-top: 4px;
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 20px;
+    color: #222;
+    word-break: break-all
+}
+
+.box__superdeal .box__information .box__delivery-info {
+    margin-top: 8px;
+    font-size: 0
+}
+
+.box__superdeal .box__information .box__delivery-info .box__item {
+    display: inline-block;
+    margin-top: 0;
+    font-size: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #999;
+    line-height: 18px;
+    vertical-align: top;
+    letter-spacing: -0.5px
+}
+
+.box__superdeal .box__information .box__delivery-info .box__item .text__tag {
+    position: relative;
+    font-size: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #616161;
+    line-height: 17px
+}
+
+.box__superdeal .box__information .box__delivery-info .box__item .text__tag.text__tag--shipping {
+    padding-left: 19px;
+    font-weight: bold;
+    color: #067dfd
+}
+
+.box__superdeal .box__information .box__delivery-info .box__item .text__tag.text__tag--shipping:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sp_homemain_2x.png) no-repeat -117px -48px/170px auto
+}
+
+.box__superdeal .box__information .box__delivery-info .box__item .text__tag.text__tag--smiledelivery {
+    padding-left: 67px
+}
+
+.box__superdeal .box__information .box__delivery-info .box__item .text__tag.text__tag--smiledelivery::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 67px;
+    height: 17px;
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sp_homemain_2x.png) no-repeat 0px -102px/170px auto
+}
+
+.box__superdeal .box__information .box__delivery-info .box__item .text__delivery-info {
+    color: #067dfd
+}
+
+.box__superdeal .box__information .box__delivery-info .box__item .text__hooking-message {
+    font-size: 12px;
+    color: #067dfd
+}
+
+.box__superdeal .box__information .box__delivery-info .box__item .text__hooking-message .text__emphasis {
+    font-weight: bold
+}
+
+.box__superdeal .box__information .box__delivery-info .box__item + .box__item {
+    position: relative;
+    padding-left: 10px
+}
+
+.box__superdeal .box__information .box__delivery-info .box__item + .box__item::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 4px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #bdbdbd
+}
+
+.box__superdeal .box__information .box__delivery-info .box__item .text__tag.text__tag--install {
+    padding-left: 18px;
+    font-weight: bold;
+    color: #4741c7
+}
+
+.box__superdeal .box__information .box__delivery-info .box__item .text__tag.text__tag--install:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sp_homemain_2x.png) no-repeat -58px -76px/170px auto
+}
+
+.box__superdeal .box__information .box__delivery-info .box__item .text__tag.text__tag--new {
+    color: #2e8de5
+}
+
+.box__superdeal .box__information .box__itemcard-nudging-group {
+    width: auto;
+    margin-top: 4px;
+    font-size: 0;
+    line-height: 1
+}
+
+.box__superdeal .box__information .box__itemcard-nudging-group .text__nudging-label {
+    display: inline-block;
+    height: 14px;
+    margin: 4px 4px 0 0;
+    padding: 2px 8px 2px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #222;
+    line-height: 12px;
+    box-sizing: content-box
+}
+
+.box__superdeal .box__information .box__itemcard-nudging-group .text__nudging-label .gds-icon {
+    display: inline-block;
+    overflow: hidden;
+    margin: -1px 0 1px 0;
+    width: 16px;
+    height: 16px;
+    line-height: 1;
+    vertical-align: middle;
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sp_homemain_2x.png) no-repeat;
+    background-size: 170px auto
+}
+
+.box__superdeal .box__information .box__itemcard-nudging-group .text__nudging-label .gds-icon-coupon-small-green500 {
+    background-position: 0 -120px
+}
+
+.box__superdeal .box__information .box__itemcard-nudging-group .text__nudging-label .gds-icon-credit-card-small-green500 {
+    background-position: -36px -120px
+}
+
+.box__superdeal .box__information .box__itemcard-nudging-group .text__nudging-label .gds-icon-gift-small-green500 {
+    background-position: -18px -120px
+}
+
+.box__superdeal .button__favor .sprite__homemain {
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sp_homemain_2x.png) no-repeat -78px -68px/170px auto
+}
+
+.box__superdeal .button__favor.button__favor--active .sprite__homemain {
+    background-position: -120px -68px
+}
+
+.box__superdeal .list-item--keyword .list__keyword {
+    position: absolute;
+    top: 167px;
+    left: 24px;
+    font-size: 24px;
+    letter-spacing: -1px
+}
+
+.box__superdeal .list-item--keyword .list__keyword .list-item {
+    width: auto;
+    height: 44px;
+    margin: 0 6px 12px
+}
+
+.box__superdeal .list-item--keyword .list__keyword .list-item:nth-child(3), .box__superdeal .list-item--keyword .list__keyword .list-item:nth-child(5) {
+    clear: both
+}
+
+.box__superdeal .list-item--keyword .list__keyword .link__item {
+    overflow: hidden;
+    display: block;
+    width: auto;
+    height: 44px;
+    padding: 0 20px;
+    border-radius: 24px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 42px;
+    letter-spacing: -1px;
+    opacity: 0.92
+}
+
+.box__superdeal .list-item--thema .text__title, .box__superdeal .list-item--brand .text__title {
+    position: absolute;
+    top: 73px;
+    left: 35px;
+    width: 316px;
+    height: auto;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 28px;
+    letter-spacing: -1px
+}
+
+.box__superdeal .list-item--timedeal .box__price, .box__superdeal .list-item--timedeal .box__price .text__month, .box__superdeal .list-item--limitdeal .box__price, .box__superdeal .list-item--limitdeal .box__price .text__month {
+    color: #da120d
+}
+
+.box__superdeal .list-item--timedeal .text__counseling, .box__superdeal .list-item--limitdeal .text__counseling {
+    color: #424242
+}
+
+.box__superdeal .list-item--limitdeal .text__counseling + .rent-contract {
+    display: inline-block;
+    padding-left: 4px;
+    font-size: 12px;
+    color: #616161;
+    vertical-align: top;
+    letter-spacing: -0.5px;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 38px
+}
+
+/*section__main-overseas*/
+.section__main-overseas {
+    padding: 45px 0 70px;
+    margin-top: 50px;
+    background-color: #f2f2f2
+}
+
+.box__overseas .box__item {
+    position: relative;
+    margin-top: 30px
+}
+
+.box__overseas .box__item .box__title-banner {
+    overflow: hidden;
+    float: left;
+    width: 465px;
+    height: 346px;
+    border-radius: 6px 0 0 6px
+}
+
+.box__overseas .box__item .box__title-banner .link__title-banner {
+    display: block
+}
+
+.box__overseas .box__item .box__title-banner .link__title-banner .box__image {
+    height: 346px
+}
+
+.box__overseas .box__item .box__title-banner .link__title-banner .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px 0 0 6px
+}
+
+.box__overseas .box__item .box__swiper-container {
+    overflow: hidden
+}
+
+.box__overseas .box__item .box__list-banner {
+    overflow: hidden;
+    position: relative;
+    height: 346px;
+    padding: 0 40px;
+    background-color: #fff;
+    border-radius: 0 6px 6px 0
+}
+
+.box__overseas .box__item .box__list-banner .box__swiper-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 39px;
+    z-index: 10;
+    width: 26px;
+    height: 100%;
+    background: url(//pics.gmarket.co.kr/pc/single/kr/homemain/image__overseas-dimmed-left.png) no-repeat 100% 0
+}
+
+.box__overseas .box__item .box__list-banner .box__swiper-container:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 40px;
+    z-index: 10;
+    width: 26px;
+    height: 100%;
+    background: url(//pics.gmarket.co.kr/pc/single/kr/homemain/image__overseas-dimmed-right.png) no-repeat 100% 0
+}
+
+.box__overseas .box__item .box__list-banner .box__title {
+    margin-top: 30px;
+    text-align: center
+}
+
+.box__overseas .box__item .box__list-banner .text__sub-title {
+    overflow: hidden;
+    height: 24px;
+    font-size: 16px;
+    color: #8b8b8b
+}
+
+.box__overseas .box__item .box__list-banner .text__title {
+    overflow: hidden;
+    margin-top: 14px;
+    height: 36px;
+    font-size: 31px;
+    font-family: Gmarket Sans,'Gmarket Sans',sans-serif;
+    font-weight: 300;
+    color: #000
+}
+
+.box__overseas .box__item .box__list-banner .list__item {
+    overflow: hidden;
+    margin-top: 31px;
+    text-align: center
+}
+
+.box__overseas .box__item .box__list-banner .list-item {
+    display: inline-block;
+    width: 138px;
+    padding: 0 10px;
+    font-size: 0
+}
+
+.box__overseas .box__item .box__list-banner .list-item .box__image {
+    width: 128px;
+    height: 128px;
+    margin: 0 auto
+}
+
+.box__overseas .box__item .box__list-banner .list-item .box__image .image {
+    width: 100%;
+    height: 100%
+}
+
+.box__overseas .box__item .box__list-banner .list-item .box__information {
+    margin-top: 11px;
+    text-align: center
+}
+
+.box__overseas .box__item .box__list-banner .list-item .box__information .text-name {
+    overflow: hidden;
+    height: 20px;
+    font-size: 14px;
+    color: #222;
+    letter-spacing: -0.5px;
+    word-break: break-all
+}
+
+.box__overseas .box__item .box__list-banner .list-item .box__information .box__price {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #424242
+}
+
+.box__overseas .box__item .box__list-banner .list-item .box__information .box__price .text__price {
+    font-size: 17px;
+    font-weight: bold
+}
+
+.box__overseas .box__item .button__prev, .box__overseas .box__item .button__next {
+    overflow: hidden;
+    position: absolute;
+    top: 149px;
+    z-index: 10;
+    padding: 4px
+}
+
+.box__overseas .box__item .button__prev {
+    left: -19px
+}
+
+.box__overseas .box__item .button__next {
+    right: -19px
+}
+
+.box__overseas .box__item .button__prev .sprite__homemain {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-position: -142px 0
+}
+
+.box__overseas .box__item .button__next .sprite__homemain {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-position: -194px 0
+}
+
+.box__overseas .box__item .button__prev .sprite__homemain:before {
+    display: block;
+    opacity: 0;
+    width: 48px;
+    height: 48px;
+    content: '';
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sprite__homemain.svg) -542px 0 no-repeat;
+    transition: opacity ease 0.25s
+}
+
+.box__overseas .box__item .button__next .sprite__homemain:before {
+    display: block;
+    opacity: 0;
+    width: 48px;
+    height: 48px;
+    content: '';
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sprite__homemain.svg) -594px 0 no-repeat;
+    transition: opacity ease 0.25s
+}
+
+.box__overseas .box__item .button__prev:hover .sprite__homemain:before {
+    opacity: 1;
+    transition: opacity ease 0.25s
+}
+
+.box__overseas .box__item .button__next:hover .sprite__homemain:before {
+    opacity: 1;
+    transition: opacity ease 0.25s
+}
+
+/*section__main-g9*/
+.section__main-g9 {
+    padding-top: 60px
+}
+
+.box__g9 .box__item {
+    position: relative;
+    margin-top: 31px
+}
+
+.box__g9 .box__item .box__swiper-container {
+    overflow: hidden
+}
+
+.box__g9 .box__item .link__g9 {
+    position: absolute;
+    top: 48px;
+    left: 56px;
+    z-index: 10
+}
+
+.box__g9 .box__item .link__g9 .sprite__homemain {
+    width: 70px;
+    height: 70px;
+    background-position: -80px -154px
+}
+
+.box__g9 .box__item .box__title-banner {
+    overflow: hidden;
+    float: left;
+    width: 465px;
+    border-radius: 6px 0 0 6px
+}
+
+.box__g9 .box__item .box__title-banner .link__title-banner {
+    overflow: hidden
+}
+
+.box__g9 .box__item .box__title-banner .link__title-banner .box__image {
+    position: relative;
+    height: 342px
+}
+
+.box__g9 .box__item .box__title-banner .link__title-banner .box__image:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.box__g9 .box__item .box__title-banner .link__title-banner .box__image .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px 0 0 6px
+}
+
+.box__g9 .box__item .box__list-banner {
+    overflow: hidden;
+    position: relative;
+    height: 312px;
+    padding: 30px 22px 0 23px;
+    background-color: #f2f2f2;
+    border-radius: 0 6px 6px 0
+}
+
+.box__g9 .box__item .box__list-banner .box__swiper-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 22px;
+    z-index: 10;
+    width: 20px;
+    height: 100%;
+    background: url(//pics.gmarket.co.kr/pc/single/kr/homemain/image__g9-dimmed-left.png) no-repeat 100% 0
+}
+
+.box__g9 .box__item .box__list-banner .box__swiper-container:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 22px;
+    z-index: 10;
+    width: 20px;
+    height: 100%;
+    background: url(//pics.gmarket.co.kr/pc/single/kr/homemain/image__g9-dimmed-right.png) no-repeat 100% 0
+}
+
+.box__g9 .box__item .box__list-banner .list__item {
+    overflow: hidden;
+    font-size: 0;
+    text-align: center
+}
+
+.box__g9 .box__item .box__list-banner .list__item .list-item {
+    overflow: hidden;
+    display: inline-block;
+    width: 194px;
+    padding: 0 17px
+}
+
+.box__g9 .box__item .box__list-banner .list__item .list-item .box__image {
+    overflow: hidden;
+    width: 194px;
+    height: 194px;
+    margin: 0 auto;
+    border-radius: 50%
+}
+
+.box__g9 .box__item .box__list-banner .list__item .list-item .box__image .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%
+}
+
+.box__g9 .box__item .box__list-banner .list__item .list-item .box__information {
+    margin-top: 15px;
+    text-align: center
+}
+
+.box__g9 .box__item .box__list-banner .list__item .list-item .box__information .text-name {
+    display: block;
+    overflow: hidden;
+    height: 38px;
+    font-size: 14px;
+    color: #222;
+    line-height: 19px;
+    letter-spacing: -0.5px;
+    word-break: break-all
+}
+
+.box__g9 .box__item .box__list-banner .list__item .list-item .box__information .box__price {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #222
+}
+
+.box__g9 .box__item .box__list-banner .list__item .list-item .box__information .box__price .text__price {
+    font-size: 17px;
+    font-weight: bold
+}
+
+.box__g9 .box__item .button__prev, .box__g9 .box__item .button__next {
+    overflow: hidden;
+    position: absolute;
+    top: 143px;
+    z-index: 10;
+    padding: 4px
+}
+
+.box__g9 .box__item .button__prev {
+    left: -19px
+}
+
+.box__g9 .box__item .button__next {
+    right: -19px
+}
+
+.box__g9 .box__item .button__prev .sprite__homemain {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-position: -142px 0
+}
+
+.box__g9 .box__item .button__next .sprite__homemain {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-position: -194px 0
+}
+
+.box__g9 .box__item .button__prev .sprite__homemain:before {
+    display: block;
+    opacity: 0;
+    width: 48px;
+    height: 48px;
+    content: '';
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sprite__homemain.svg) -542px 0 no-repeat;
+    transition: opacity ease 0.25s
+}
+
+.box__g9 .box__item .button__next .sprite__homemain:before {
+    display: block;
+    opacity: 0;
+    width: 48px;
+    height: 48px;
+    content: '';
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sprite__homemain.svg) -594px 0 no-repeat;
+    transition: opacity ease 0.25s
+}
+
+.box__g9 .box__item .button__prev:hover .sprite__homemain:before {
+    opacity: 1;
+    transition: opacity ease 0.25s
+}
+
+.box__g9 .box__item .button__next:hover .sprite__homemain:before {
+    opacity: 1;
+    transition: opacity ease 0.25s
+}
+
+/*focus*/
+.section__main-focus {
+    padding-top: 60px
+}
+
+.box__focus .box__item .box__swiper-container {
+    overflow: hidden
+}
+
+.box__focus .box__item {
+    position: relative;
+    margin-top: 20px
+}
+
+.box__focus .box__item .list__item {
+    overflow: hidden
+}
+
+.box__focus .box__item .list__item .list-item {
+    overflow: hidden;
+    float: left;
+    width: 220px;
+    margin-left: 25px
+}
+
+.box__focus .box__item .list__item .list-item:first-child {
+    margin-left: 0
+}
+
+.box__focus .box__item .list__item .list-item .box__image {
+    overflow: hidden;
+    position: relative;
+    width: 220px;
+    height: 220px;
+    border-radius: 6px
+}
+
+.box__focus .box__item .list__item .list-item .box__image:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(0,0,0, 0.03);
+    border-radius: 6px
+}
+
+.box__focus .box__item .list__item .list-item .box__image:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    border-radius: 6px
+}
+
+.box__focus .box__item .list__item .list-item .box__image .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    transition: -webkit-transform .2s cubic-bezier(.165,.84,.44,1);
+    transition: transform .2s cubic-bezier(.165,.84,.44,1);
+    transition: transform .2s cubic-bezier(.165,.84,.44,1),-webkit-transform .2s cubic-bezier(.165,.84,.44,1)
+}
+
+.box__focus .box__item .list__item .list-item .link__item:hover .box__image .image {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05)
+}
+
+.box__focus .box__item .list__item .list-item .box__information {
+    margin-top: 14px
+}
+
+.box__focus .box__item .list__item .list-item .box__information .text-name {
+    display: block;
+    height: 19px;
+    font-size: 14px;
+    color: #222;
+    line-height: 18px;
+    letter-spacing: -0.5px
+}
+
+.box__focus .box__item .list__item .list-item .box__information .box__price {
+    margin-top: 11px;
+    font-size: 14px;
+    color: #222
+}
+
+.box__focus .box__item .list__item .list-item .box__information .box__price .text__price {
+    font-size: 17px;
+    font-weight: bold
+}
+
+.box__focus .box__item .button__prev, .box__focus .box__item .button__next {
+    overflow: hidden;
+    position: absolute;
+    top: 82px;
+    z-index: 20;
+    padding: 4px
+}
+
+.box__focus .box__item .button__prev {
+    left: -19px
+}
+
+.box__focus .box__item .button__next {
+    right: -19px
+}
+
+.box__focus .box__item .button__prev .sprite__homemain {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-position: -142px 0
+}
+
+.box__focus .box__item .button__next .sprite__homemain {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-position: -194px 0
+}
+
+.box__focus .box__item .button__prev .sprite__homemain:before {
+    display: block;
+    opacity: 0;
+    width: 48px;
+    height: 48px;
+    content: '';
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sprite__homemain.svg) -542px 0 no-repeat;
+    transition: opacity ease 0.25s
+}
+
+.box__focus .box__item .button__next .sprite__homemain:before {
+    display: block;
+    opacity: 0;
+    width: 48px;
+    height: 48px;
+    content: '';
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sprite__homemain.svg) -594px 0 no-repeat;
+    transition: opacity ease 0.25s
+}
+
+.box__focus .box__item .button__prev:hover .sprite__homemain:before {
+    opacity: 1;
+    transition: opacity ease 0.25s
+}
+
+.box__focus .box__item .button__next:hover .sprite__homemain:before {
+    opacity: 1;
+    transition: opacity ease 0.25s
+}
+
+/*section__main-power*/
+.section__main-power {
+    padding-top: 57px
+}
+
+.box__power .box__item .box__swiper-container {
+    overflow: hidden
+}
+
+.box__power .box__item {
+    position: relative;
+    margin-top: 20px
+}
+
+.box__power .box__item .list__item {
+    overflow: hidden
+}
+
+.box__power .box__item .list__item .list-item {
+    overflow: hidden;
+    float: left;
+    width: 220px;
+    height: 312px;
+    margin-left: 25px
+}
+
+.box__power .box__item .list__item .list-item:first-child {
+    margin-left: 0
+}
+
+.box__power .box__item .list__item .list-item .box__image {
+    overflow: hidden;
+    position: relative;
+    width: 220px;
+    height: 220px;
+    border-radius: 6px
+}
+
+.box__power .box__item .list__item .list-item .box__image:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(0,0,0, 0.03);
+    border-radius: 6px
+}
+
+.box__power .box__item .list__item .list-item .box__image:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    border-radius: 6px
+}
+
+.box__power .box__item .list__item .list-item .box__image .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    transition: -webkit-transform .2s cubic-bezier(.165,.84,.44,1);
+    transition: transform .2s cubic-bezier(.165,.84,.44,1);
+    transition: transform .2s cubic-bezier(.165,.84,.44,1),-webkit-transform .2s cubic-bezier(.165,.84,.44,1)
+}
+
+.box__power .box__item .list__item .list-item .link__item:hover .box__image .image {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05)
+}
+
+.box__power .box__item .list__item .list-item .box__information {
+    margin-top: 14px
+}
+
+.box__power .box__item .list__item .list-item .box__information .text-name {
+    overflow: hidden;
+    height: 38px;
+    font-size: 14px;
+    color: #222;
+    line-height: 18px;
+    letter-spacing: -0.5px
+}
+
+.box__power .box__item .list__item .list-item .box__information .box__price {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #424242
+}
+
+.box__power .box__item .list__item .list-item .box__information .box__price .text__price {
+    font-size: 17px;
+    font-weight: bold
+}
+
+.box__power .box__item .button__prev, .box__power .box__item .button__next {
+    overflow: hidden;
+    position: absolute;
+    top: 82px;
+    z-index: 20;
+    padding: 4px
+}
+
+.box__power .box__item .button__prev {
+    left: -19px
+}
+
+.box__power .box__item .button__next {
+    right: -19px
+}
+
+.box__power .box__item .button__prev .sprite__homemain {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-position: -142px 0
+}
+
+.box__power .box__item .button__next .sprite__homemain {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-position: -194px 0
+}
+
+.box__power .box__item .button__prev .sprite__homemain:before {
+    display: block;
+    opacity: 0;
+    width: 48px;
+    height: 48px;
+    content: '';
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sprite__homemain.svg) -542px 0 no-repeat;
+    transition: opacity ease 0.25s
+}
+
+.box__power .box__item .button__next .sprite__homemain:before {
+    display: block;
+    opacity: 0;
+    width: 48px;
+    height: 48px;
+    content: '';
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sprite__homemain.svg) -594px 0 no-repeat;
+    transition: opacity ease 0.25s
+}
+
+.box__power .box__item .button__prev:hover .sprite__homemain:before {
+    opacity: 1;
+    transition: opacity ease 0.25s
+}
+
+.box__power .box__item .button__next:hover .sprite__homemain:before {
+    opacity: 1;
+    transition: opacity ease 0.25s
+}
+
+/*ad*/
+.section__main-ad {
+    padding-top: 48px
+}
+
+.section__main-ad .box__minishop {
+    position: relative;
+    float: left;
+    width: 465px
+}
+
+.section__main-ad .box__chance {
+    position: relative;
+    float: right;
+    width: 710px
+}
+
+.box__minishop .box__item {
+    position: relative;
+    margin-top: 19px
+}
+
+.box__minishop .box__image {
+    overflow: hidden;
+    height: 332px;
+    border-radius: 6px
+}
+
+.box__minishop .link__item {
+    display: block
+}
+
+.box__minishop .box__image .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px
+}
+
+.box__minishop .box__item .button__prev, .box__minishop .box__item .button__next {
+    overflow: hidden;
+    position: absolute;
+    top: 254px;
+    padding: 4px
+}
+
+.box__minishop .box__item .button__prev {
+    right: 82px
+}
+
+.box__minishop .box__item .button__next {
+    right: 36px
+}
+
+.box__minishop .box__item .button__prev .sprite__homemain {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background-position: -338px 0
+}
+
+.box__minishop .box__item .button__next .sprite__homemain {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background-position: -374px 0
+}
+
+.box__chance .box__item {
+    position: relative;
+    margin-top: 19px;
+    border: 1px solid #e3e3e3;
+    border-radius: 6px;
+    box-sizing: border-box
+}
+
+.box__chance .box__item .box__swiper-container {
+    overflow: hidden
+}
+
+.box__chance .list__item {
+    height: 332px;
+    padding: 40px 0 0 55px;
+    box-sizing: border-box
+}
+
+.box__chance .list-item {
+    float: left;
+    width: 180px;
+    margin-left: 30px
+}
+
+.box__chance .list-item:first-child {
+    margin-left: 0
+}
+
+.box__chance .list-item .link__item {
+    color: #222
+}
+
+.box__chance .list-item .box__image {
+    overflow: hidden;
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 4px
+}
+
+.box__chance .list-item .box__image:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(0,0,0, 0.03);
+    border-radius: 4px
+}
+
+.box__chance .list-item .box__image:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    border-radius: 4px
+}
+
+.box__chance .list-item .box__image .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    transition: -webkit-transform .2s cubic-bezier(.165,.84,.44,1);
+    transition: transform .2s cubic-bezier(.165,.84,.44,1);
+    transition: transform .2s cubic-bezier(.165,.84,.44,1),-webkit-transform .2s cubic-bezier(.165,.84,.44,1)
+}
+
+.box__chance .list-item .link__item:hover .box__image .image {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05)
+}
+
+.box__chance .list-item .box__information {
+    margin-top: 14px;
+    text-align: center
+}
+
+.box__chance .list-item .box__information .text-name {
+    overflow: hidden;
+    height: 38px;
+    font-size: 14px;
+    color: #222;
+    line-height: 19px
+}
+
+.box__chance .list-item .box__information .box__price {
+    margin-top: 9px;
+    font-size: 14px;
+    color: #424242;
+}
+
+.box__chance .list-item .box__information .box__price .text__price {
+    font-size: 17px;
+    font-weight: bold
+}
+
+.box__chance .button__prev, .box__chance .button__next {
+    overflow: hidden;
+    position: absolute;
+    top: 141px;
+    z-index: 20;
+    padding: 4px
+}
+
+.box__chance .button__prev {
+    left: -20px
+}
+
+.box__chance .button__next {
+    right: -20px
+}
+
+.box__chance .button__prev .sprite__homemain {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    background-position: 0 0
+}
+
+.box__chance .button__next .sprite__homemain {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    background-position: -42px 0
+}
+
+.box__chance .box__item .button__prev .sprite__homemain:before {
+    display: block;
+    opacity: 0;
+    width: 42px;
+    height: 42px;
+    content: '';
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sprite__homemain.svg) -454px 0 no-repeat;
+    transition: opacity ease 0.25s
+}
+
+.box__chance .box__item .button__next .sprite__homemain:before {
+    display: block;
+    opacity: 0;
+    width: 42px;
+    height: 42px;
+    content: '';
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sprite__homemain.svg) -496px 0 no-repeat;
+    transition: opacity ease 0.25s
+}
+
+.box__chance .box__item .button__prev:hover .sprite__homemain:before {
+    opacity: 1;
+    transition: opacity ease 0.25s
+}
+
+.box__chance .box__item .button__next:hover .sprite__homemain:before {
+    opacity: 1;
+    transition: opacity ease 0.25s
+}
+
+/*notice*/
+.section__main-notice {
+    padding: 56px 0 57px
+}
+
+.section__main-notice .text__title {
+    position: relative;
+    float: left;
+    padding-right: 19px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -1px
+}
+
+.section__main-notice .text__title .link__title {
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, Roboto, Noto Sans CJK KR, Tahoma, 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    color: #666;
+    letter-spacing: 0
+}
+
+.section__main-notice .text__title .link__title:after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    background-position: -154px -162px
+}
+
+.section__main-notice .box__notice {
+    overflow: hidden;
+    margin-left: 6px;
+    line-height: 20px
+}
+
+.section__main-notice .box__notice .link__notice {
+    overflow: hidden;
+    margin-left: 6px;
+    font-size: 14px;
+    color: #777;
+    letter-spacing: -1px;
+    vertical-align: top
+}
+
+.section__main-notice .box__notice .text__date {
+    position: relative;
+    padding-left: 17px;
+    font-size: 13px;
+    color: #999;
+    vertical-align: top
+}
+
+.section__main-notice .box__notice .text__date:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 9px;
+    width: 1px;
+    height: 10px;
+    font-size: 13px;
+    background-color: #eee
+}
+
+/*fontguide*/
+.section__main-fontguide {
+    background-color: #00c01d
+}
+
+.section__main-fontguide .image {
+    width: 100%
+}
+
+.section__main .box__category-all-layer {
+    display: block
+}
+
+.section__main .box__category-all-layer:before {
+    content: none
+}
+
+.section__main .box__category-all-layer .box__category-2depth {
+    display: none
+}
+
+/*guide*/
+.section__main-guide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5010;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box
+}
+
+.section__main-guide .box__main-guide {
+    position: relative;
+    top: 50%;
+    left: 0;
+    z-index: 5020;
+    width: 1052px;
+    margin: 0 auto;
+    transform: translateY(-50%)
+}
+
+.section__main-guide .box__main-guide .box__image .image {
+    width: 100%
+}
+
+.section__main-guide .box__main-guide .button__prev, .section__main-guide .box__main-guide .button__next {
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    margin: -32px 0 0 0;
+    padding: 4px;
+    z-index: 30
+}
+
+.section__main-guide .box__main-guide .button__prev {
+    display: none;
+    left: -78px
+}
+
+.section__main-guide .box__main-guide .button__next {
+    right: -78px
+}
+
+.section__main-guide .box__main-guide .button__prev .sprite__homemain {
+    width: 38px;
+    height: 62px;
+    background-position: -248px -90px
+}
+
+.section__main-guide .box__main-guide .button__next .sprite__homemain {
+    width: 38px;
+    height: 62px;
+    background-position: -290px -90px
+}
+
+.section__main-guide .box__main-guide .list__pagination {
+    position: absolute;
+    bottom: 6.608695652173913%;
+    left: 7.604562737642586%
+}
+
+.section__main-guide .box__main-guide .list__pagination:after {
+    display: block;
+    content: '';
+    clear: both
+}
+
+.section__main-guide .box__main-guide .list__pagination .list-item {
+    float: left;
+    margin-right: 9px
+}
+
+.section__main-guide .box__main-guide .list__pagination .list-item .button__number {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sprite__homemain-guidex2.png) no-repeat;
+    background-size: 118px auto;
+    line-height: 999px;
+    vertical-align: top
+}
+
+.section__main-guide .box__main-guide .list__pagination .list-item .button__number.button__number1 {
+    background-position: 0 0
+}
+
+.section__main-guide .box__main-guide .list__pagination .list-item .button__number.button__number2 {
+    background-position: -24px 0
+}
+
+.section__main-guide .box__main-guide .list__pagination .list-item .button__number.button__number3 {
+    background-position: -48px 0
+}
+
+.section__main-guide .box__main-guide .list__pagination .list-item .button__number.button__number4 {
+    background-position: -72px 0
+}
+
+.section__main-guide .box__main-guide .list__pagination .list-item .button__number.button__number5 {
+    background-position: -96px 0
+}
+
+.section__main-guide .box__main-guide .list__pagination .list-item.list-item--active .button__number.button__number1 {
+    background-position: 0 -24px
+}
+
+.section__main-guide .box__main-guide .list__pagination .list-item.list-item--active .button__number.button__number2 {
+    background-position: -24px -24px
+}
+
+.section__main-guide .box__main-guide .list__pagination .list-item.list-item--active .button__number.button__number3 {
+    background-position: -48px -24px
+}
+
+.section__main-guide .box__main-guide .list__pagination .list-item.list-item--active .button__number.button__number4 {
+    background-position: -72px -24px
+}
+
+.section__main-guide .box__main-guide .list__pagination .list-item.list-item--active .button__number.button__number5 {
+    background-position: -96px -24px
+}
+
+.section__main-guide .box__main-guide .box__tool {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    height: 29px;
+    padding-top: 15px
+}
+
+.section__main-guide .box__main-guide .box__tool .box__select-item {
+    float: left;
+    position: relative;
+    padding-top: 3px
+}
+
+.section__main-guide .box__main-guide .box__tool .form__checkbox {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    margin-top: -12px;
+    border: 0;
+    background: transparent;
+    -webkit-appearance: none;
+    appearance: none
+}
+
+.section__main-guide .box__main-guide .box__tool .form__checkbox:hover + .form__label:before {
+    background-position: -245px -224px
+}
+
+.section__main-guide .box__main-guide .box__tool .form__checkbox:focus + .form__label:before {
+    outline: 1px dotted #fff
+}
+
+.section__main-guide .box__main-guide .box__tool .form__checkbox:checked + .form__label:before {
+    background-position: -273px -224px
+}
+
+.section__main-guide .box__main-guide .box__tool .form__label {
+    position: relative;
+    display: block;
+    height: 29px;
+    padding-left: 31px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 23px;
+    letter-spacing: -1px;
+    vertical-align: top;
+    cursor: pointer
+}
+
+.section__main-guide .box__main-guide .box__tool .form__label:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -14px;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-position: -217px -224px
+}
+
+.section__main-guide .box__main-guide .box__tool .button__closed {
+    vertical-align: top;
+    margin: -1px 4px 0 21px
+}
+
+.section__main-guide .box__main-guide .box__tool .button__closed .sprite__homemain {
+    width: 31px;
+    height: 31px;
+    background-position: -302px -224px
+}
+
+@media screen and (max-width: 1300px) {
+    .section__main-guide .box__main-guide {
+        width:789px
+    }
+
+    .section__main-guide .box__main-guide .list__pagination {
+        bottom: 27px;
+        left: 61px
+    }
+
+    .section__main-guide .box__main-guide .box__image .image {
+        height: auto
+    }
+}
+
+/* IE nudging */
+.box__browser-nudging .sprite__homemain--before:before {
+    overflow: hidden;
+    display: inline-block;
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sp_homemain_2x.png) no-repeat;
+    font-size: 0;
+    background-size: 170px auto;
+    content: '';
+}
+
+.box__browser-nudging {
+    position: relative;
+    width: 100%;
+    background: #f5f5f5;
+    z-index: 5020;
+}
+
+.box__browser-nudging .box__inner {
+    position: relative;
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.box__browser-nudging .box__inner .text__nudging {
+    display: inline-block;
+    padding-top: 28px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #424242;
+    text-align: left;
+}
+
+.box__browser-nudging .box__inner .text__nudging:before {
+    margin-right: 4px;
+    width: 24px;
+    height: 24px;
+    background-position: -34px -48px
+}
+
+.box__browser-nudging .box__inner .text__nudging .text__strong {
+    margin-left: 4px;
+    font-weight: bold;
+}
+
+.box__browser-nudging .box__inner .box__browser-link {
+    position: absolute;
+    right: 0;
+    top: 16px;
+    font-size: 0;
+}
+
+.box__browser-nudging .box__inner .box__browser-link .link__browser {
+    display: inline-block;
+    padding: 8px 20px 8px 8px;
+    border-radius: 24px;
+    border: 1px solid #bdbdbd;
+    background: #fff
+}
+
+.box__browser-nudging .box__inner .box__browser-link .link__browser + .link__browser {
+    margin-left: 8px
+}
+
+.box__browser-nudging .box__inner .box__browser-link .link__browser .text__chrome {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: bold;
+    color: #222;
+    text-align: center;
+}
+
+.box__browser-nudging .box__inner .box__browser-link .link__browser .text__chrome:before {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    background-position: 0 -36px
+}
+
+.box__browser-nudging .box__inner .box__browser-link .link__browser .text__edge {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: bold;
+    color: #222;
+    text-align: center;
+}
+
+.box__browser-nudging .box__inner .box__browser-link .link__browser .text__edge:before {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    background-position: 0 -70px
+}

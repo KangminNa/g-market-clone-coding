@@ -1,0 +1,527 @@
+@charset "utf-8"; /*************************/
+/* GMKT dWeb 에서 사용되는 common.css 입니다.
+ * reset / webfont 포함 됩니다.
+ * 수정할 경우 UXE 팀의 검수를 받아야합니다.
+/**********************/
+@font-face {
+    /* noto-sans-kr-300 - korean */
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Noto Sans KR Light'), local('NotoSansKR-Light'), url('//script.gmarket.com/fonts/noto-sans-kr-v11-korean-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('//script.gmarket.com/fonts/noto-sans-kr-v11-korean-300.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    /* noto-sans-kr-regular - korean */
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Sans KR Regular'), local('NotoSansKR-Regular'), url('//script.gmarket.com/fonts/noto-sans-kr-v11-korean-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('//script.gmarket.com/fonts/noto-sans-kr-v11-korean-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    /* noto-sans-kr-500 - korean */
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Noto Sans KR Medium'), local('NotoSansKR-Medium'), url('//script.gmarket.com/fonts/noto-sans-kr-v11-korean-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('//script.gmarket.com/fonts/noto-sans-kr-v11-korean-500.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    /* noto-sans-kr-700 - korean */
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Noto Sans KR Bold'), local('NotoSansKR-Bold'), url('//script.gmarket.com/fonts/noto-sans-kr-v11-korean-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('//script.gmarket.com/fonts/noto-sans-kr-v11-korean-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-family: 'Gmarket Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Gmarket Sans Bold'), local('GmarketSans-Bold'), url('//script.gmarket.com/fonts/GmarketSansBold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('//script.gmarket.com/fonts/GmarketSansBold.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-family: 'Gmarket Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Gmarket Sans Medium'), local('GmarketSans-Medium'), url('//script.gmarket.com/fonts/GmarketSansMedium.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('//script.gmarket.com/fonts/GmarketSansMedium.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-family: 'Gmarket Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Gmarket Sans Light'), local('GmarketSans-Light'), url('//script.gmarket.com/fonts/GmarketSansLight.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('//script.gmarket.com/fonts/GmarketSansLight.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* PC RESET */
+* {
+    margin: 0;
+    padding: 0
+}
+
+ul,ol {
+    list-style: none
+}
+
+button {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-color: transparent;
+    cursor: pointer
+}
+
+a,a:hover,a:active,a:focus {
+    text-decoration: none
+}
+
+button {
+    border: 0 none;
+    background-color: transparent;
+    cursor: pointer
+}
+
+em,address {
+    font-style: normal
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+iframe,fieldset,img {
+    border: 0 none
+}
+
+textarea {
+    resize: none
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block
+}
+
+img {
+    vertical-align: top
+}
+
+hr {
+    display: none
+}
+
+/* font rule */
+body,table,input,textarea,select,button,th,td,input,select,textarea,th,td,p,dl,dt,dd,li,pre {
+    font-family: -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, Roboto, Noto Sans CJK KR, Tahoma, 'Noto Sans KR', 'Gmarket Sans', sans-serif;
+}
+
+/* Global Common */
+.for-a11y {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    text-indent: -5000em;
+}
+
+/*global skip navigation*/
+#skip-navigation {
+}
+
+#skip-navigation a {
+    position: absolute;
+    left: 0;
+    top: -100px;
+    z-index: 1020;
+    display: block;
+    padding: 9px 0;
+    width: 100%;
+    background: #1179ea;
+    font-size: 0;
+    line-height: 0;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+#skip-navigation a:active, #skip-navigation a:focus {
+    top: 0;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.5;
+    opacity: .7;
+}
+
+/*old header 원래 font로 */
+#header * {
+    font-family: dotum,"돋움";
+}
+
+/* layout */
+#wrapper {
+    width: 100%
+}
+
+#header {
+    width: 100%
+}
+
+#container {
+    width: 100%
+}
+
+#footer {
+    width: 100%
+}
+
+/* IE9 이하 브라우저 브라우저 업데이트 안내 레이어 */
+.section__layer {
+    position: fixed;
+    z-index: 100010;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.section__layer .section__browser-update-notification-layer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 578px;
+    height: 395px;
+    margin-top: -217px;
+    margin-left: -290px;
+    background-color: #fff;
+    border: solid 1px #666;
+    z-index: 100010;
+}
+
+.section__layer .section__browser-update-notification-layer .box__layer-content .text__layer-title {
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+    color: #333;
+    margin-top: 56px;
+    margin-bottom: 9px;
+}
+
+.section__layer .section__browser-update-notification-layer .box__layer-content .text__layer-text {
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.74;
+    letter-spacing: 0.2px;
+    color: #333
+}
+
+.section__layer .section__browser-update-notification-layer .box__layer-content .text__layer-text .text__emphasis {
+    color: #067dfd;
+    font-weight: bold;
+}
+
+.section__layer .section__browser-update-notification-layer .box__layer-content .link__browser-update {
+    display: block;
+    width: 234px;
+    height: 68px;
+    color: #fff;
+    text-align: center;
+    line-height: 68px;
+    background: url('//pics.gmarket.co.kr/pc/single/kr/common/browser-update-notification-layer/btn.png') no-repeat 0 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 24px auto 0;
+}
+
+.section__layer .section__browser-update-notification-layer .box__layer_footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #ebebeb;
+}
+
+.section__layer .section__browser-update-notification-layer .box__layer_footer:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.section__layer .section__browser-update-notification-layer .box__layer_footer .button__set-notification-state {
+    width: auto;
+    height: 50px;
+    border: none;
+    background: transparent;
+    text-align: left;
+    float: left;
+    min-width: 180px;
+    padding-top: 3px;
+}
+
+.section__layer .section__browser-update-notification-layer .box__layer_footer .button__set-notification-state .box__set-notification-state {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-top: -4px;
+    margin-left: 18px;
+    background: #fff url('//pics.gmarket.co.kr/pc/single/kr/common/browser-update-notification-layer/d-ico-check-24-off.png') no-repeat 0 0;
+}
+
+.section__layer .section__browser-update-notification-layer .box__layer_footer .button__set-notification-state .box__set-notification-state .ir {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: -999em;
+    left: 0;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -999em
+}
+
+.section__layer .section__browser-update-notification-layer .box__layer_footer .button__set-notification-state.button__set-notification-state--active .box__set-notification-state .sprite__icon-checkbox {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: #fff url('//pics.gmarket.co.kr/pc/single/kr/common/browser-update-notification-layer/d-ico-check-24-on.png') no-repeat 0 0;
+}
+
+.section__layer .section__browser-update-notification-layer .box__layer_footer .button__set-notification-state .text__notification-state {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    color: #666;
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+.section__layer .section__browser-update-notification-layer .box__layer_footer .button__set-notification-state:focus .box__set-notification-state, .section__layer .section__browser-update-notification-layer .box__layer_footer .button__set-notification-state:focus .text__notification-state {
+    position: relative;
+}
+
+.section__layer .section__browser-update-notification-layer .box__layer_footer .button__close-layer {
+    float: right;
+    width: auto;
+    height: 50px;
+    border: none;
+    background: transparent;
+    padding-right: 16px;
+    min-width: 84px;
+    text-align: right;
+}
+
+.section__layer .section__browser-update-notification-layer .box__layer_footer .button__close-layer .sprite__close-layer-icon {
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    margin-left: 14px;
+    background: #fff url('//pics.gmarket.co.kr/pc/single/kr/common/browser-update-notification-layer/ic-close-48.png') no-repeat 0 0;
+    margin-top: -1px;
+}
+
+.section__layer .section__browser-update-notification-layer .box__layer_footer .button__close-layer .text__close-layer {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    color: #333;
+    vertical-align: top;
+}
+
+.section__layer .section__browser-update-notification-layer .box__layer_footer .button__close-layer:focus .sprite__close-layer-icon, .section__layer .section__browser-update-notification-layer .box__layer_footer .button__close-layer:focus .text__close-layer {
+    position: relative;
+}
+
+.section__layer .dimmed {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    left: 0;
+    top: 0;
+    z-index: 9998;
+    opacity: 0.2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    /* IE8을 위한 투명도 설정 */
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+}
+
+/*딤드레이어 팝업 - 개인정보 이용현황*/
+.box__layer.box__layer--privacy {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5001;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.box__layer.box__layer--privacy .box__layer-container {
+    position: absolute;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    width: 432px;
+    border: 0;
+    z-index: 300;
+    transform: translate3d(-50%, -50%, 0);
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.box__layer.box__layer--privacy .box__layer-dimmed {
+    display: none;
+    content: '';
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 200;
+    cursor: pointer;
+}
+
+.box__layer.box__layer--privacy .box__layer-container .box__layer-body {
+    padding: 64px 16px 24px;
+    text-align: center;
+}
+
+.box__layer.box__layer--privacy .box__layer-container .box__layer-body .text__title {
+    font-size: 20px;
+    line-height: 28px;
+    color: #222;
+}
+
+.box__layer.box__layer--privacy .box__layer-container .text__content-info {
+    padding: 12px 16px 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    font-family: -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, Roboto, Noto Sans CJK KR, Tahoma, 'Noto Sans KR', sans-serif;
+    color: #424242;
+}
+
+.box__layer.box__layer--privacy .box__layer-container .box__button {
+    padding-top: 16px;
+    margin: 0;
+}
+
+.box__layer.box__layer--privacy .box__layer-container .box__button .link__check {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    height: 44px;
+    border: none;
+    line-height: 44px;
+    font-family: 'Gmarket Sans';
+    color: #fff;
+    background-color: #00C400;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.box__layer.box__layer--privacy .box__layer-container .box__button .link__no-viewing {
+    display: block;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, Roboto, Noto Sans CJK KR, Tahoma, 'Noto Sans KR', sans-serif;
+    text-decoration: underline;
+    color: #222;
+}
+
+.box__layer.box__layer--privacy .box__layer-container .box__button .link__check-gmarket, .box__layer.box__layer--privacy .box__layer-container .box__button .link__check-smilepay {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #222;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.box__layer.box__layer--privacy .box__layer-container .box__button .link__check-smilepay {
+    margin-top: 12px;
+}
+
+.box__layer.box__layer--privacy .box__layer-container .button__close::after {
+    content: '';
+    overflow: hidden;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background-image: url(//pics.gmarket.co.kr/pc/sprite/kr/mypage/sprite__mypage2.png);
+    background-repeat: no-repeat;
+    background-position: 0 -110px;
+    font-size: 0;
+    vertical-align: text-top;
+    background-size: 600px auto;
+}
+
+.box__layer.box__layer--privacy.box__layer--active, .box__layer.box__layer--privacy.box__layer--active .box__layer-dimmed {
+    display: block;
+}
+
+.box__layer.box__layer--privacy.box__info--full {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+}
+
+.box__layer.box__layer--privacy.box__info--full .box__layer-dimmed, .box__layer.box__layer--privacy.box__info--full .button__close {
+    display: none ;
+}
+
+.box__layer.box__layer--privacy.box__info--full .box__layer-container {
+    width: 100%;
+    max-width: 432px;
+    border-radius: 0;
+}
+
+.box__layer.box__layer--privacy.box__info--full .box__layer-container .box__layer-body {
+    padding: 24px 16px;
+}
+
+/* Big Smile Day*/
+.box__bigs-tag {
+    display: block;
+    position: absolute
+}
+
+.box__bigs-tag .image {
+    width: 100%
+}
