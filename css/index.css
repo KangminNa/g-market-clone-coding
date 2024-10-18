@@ -1,0 +1,40 @@
+/* 슬라이더 컨테이너 */
+.slider {
+  width: 100vw; /* 화면 전체 너비 */
+  height: 400px;
+  overflow: hidden;
+  position: relative; /* 부모 컨테이너의 영향을 받지 않도록 절대 위치로 설정 */
+  top: 0; /* 페이지 맨 위에 위치 */
+  left: 0; /* 화면의 가장 왼쪽에 맞춤 */
+  z-index: 8; /* 슬라이더가 다른 요소 위에 표시되도록 z-index 설정 */
+}
+
+/* 슬라이드들을 감싸는 요소 */
+.slides {
+  display: flex;
+  width: calc(100% * 6); /* 슬라이드의 수를 기준으로 설정 */
+  animation: slide 30s linear infinite; /* 무한 반복 애니메이션 */
+}
+
+/* 각 슬라이드 스타일 */
+.slide {
+  width: 100%; /* 각각의 슬라이드가 100% 너비를 가짐 */
+  height: 400px;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover; /* 이미지 비율 유지하면서 채우기 */
+}
+
+/* 애니메이션 */
+@keyframes slide {
+  0% {
+    transform: translateX(0); /* 첫 번째 슬라이드에서 시작 */
+  }
+  100% {
+    transform: translateX(-50%); /* 마지막 슬라이드까지 이동 */
+  }
+}
