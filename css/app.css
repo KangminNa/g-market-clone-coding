@@ -226,8 +226,7 @@
 .section__main-top .box__promotion .box__tool {
     overflow: hidden;
     position: absolute;
-    bottom: 18px;
-    right: 19px;
+
     z-index: 10
 }
 

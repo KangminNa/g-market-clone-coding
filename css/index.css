@@ -1,24 +1,29 @@
+.slider-container {
+  position: relative;
+  width: 976px;
+  height: 400px;
+}
+
 /* 슬라이더 컨테이너 */
 .slider {
-  width: 100vw; /* 화면 전체 너비 */
+  width: 100%; /* 컨테이너의 전체 너비 */
   height: 400px;
-  position: relative; /* 부모 컨테이너의 영향을 받지 않도록 절대 위치로 설정 */
-  top: 0; /* 페이지 맨 위에 위치 */
-  left: 0; /* 화면의 가장 왼쪽에 맞춤 */
-  z-index: 5; /* 슬라이더가 다른 요소 위에 표시되도록 z-index 설정 */
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1; /* 슬라이더 뒤에 컨트롤 바가 위치할 수 있도록 */
 }
 
 /* 슬라이드들을 감싸는 요소 */
 .slides {
   display: flex;
-  overflow: hidden; /* Prevents overflow beyond slider area */
-  width: calc(100% * 6); /* 슬라이드의 수를 기준으로 설정 */
-  animation: slide 30s linear infinite; /* 무한 반복 애니메이션 */
+  overflow: hidden; 
+  width: calc(100% * 6); /* 슬라이드 수에 맞게 설정 */
+  animation: slide 30s linear infinite;
 }
 
-/* 각 슬라이드 스타일 */
 .slide {
-  width: 100%; /* 각각의 슬라이드가 100% 너비를 가짐 */
+  width: 100%;
   height: 400px;
   flex-shrink: 0;
 }
@@ -26,15 +31,78 @@
 .slide img {
   width: 100%;
   height: 400px;
-  object-fit: cover; /* 이미지 비율 유지하면서 채우기 */
+  object-fit: cover;
+}
+
+/* 컨트롤 바 */
+.control-bar {
+  position: absolute;
+  bottom: 15px; /* 슬라이더 아래에 위치 */
+  left: 70%;
+  transform: translateX(-50%); /* 중앙 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border-radius: 30px;
+  padding: 10px 15px;
+  z-index: 5; /* 슬라이더 이미지 위에 표시 */
+}
+
+.control-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+}
+
+.control-btn {
+  background-color: #d1c9c5;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.control-btn .icon {
+  font-size: 18px;
+  color: white;
+}
+
+.pause-btn {
+  background-color: #d1c9c57c;
+}
+
+.slide-counter {
+  background-color: #d1c9c57c;
+  padding: 10px 15px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.current-slide, .total-slides, .divider {
+  font-size: 16px;
+}
+
+.more-btn {
+  background-color: #d1c9c57c;
+}
+
+.control-btn:hover {
+  background-color: #bcb1ad;
 }
 
 /* 애니메이션 */
 @keyframes slide {
   0% {
-    transform: translateX(0); /* 첫 번째 슬라이드에서 시작 */
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%); /* 마지막 슬라이드까지 이동 */
+    transform: translateX(-50%);
   }
 }
