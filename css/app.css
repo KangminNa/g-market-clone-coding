@@ -290,7 +290,7 @@
 }
 
 .section__main-top .box__promotion .swiper-button-prev, .section__main-top .box__promotion .swiper-button-next {
-    top: 167px;
+    top: 130px;
     width: auto;
     height: auto;
     margin: 0;
@@ -1704,7 +1704,7 @@
 }
 
 .box__homeshopping .swiper-button-prev, .box__homeshopping .swiper-button-next {
-    top: 71px;
+    top: 130px;
     width: auto;
     height: auto;
     margin: 0;
